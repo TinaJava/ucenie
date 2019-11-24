@@ -54,7 +54,7 @@ public class Starter {
         // vytvorenie a nastavenie dietata v ClenRodiny
         ClenRodiny dietaPomocne;//cey ctrl R si moyme premenovat premennu
         dietaPomocne = new ClenRodiny();
-        dietaPomocne.setMeno("Laura");
+        dietaPomocne.setMeno("Laura2");
         dietaPomocne.setPohlavie(Pohlavie.ZENA);
         dietaPomocne.setVek(15);
         dietaPomocne.setVyska(142);
