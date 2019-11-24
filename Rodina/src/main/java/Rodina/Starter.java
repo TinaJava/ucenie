@@ -64,7 +64,7 @@ public class Starter {
         
         // vytvorenie a nastavenie dietata 2 ClenRodiny
         dietaPomocne = new ClenRodiny();
-        dietaPomocne.setMeno("Kira");
+        dietaPomocne.setMeno("Kira2");
         dietaPomocne.setPohlavie(Pohlavie.ZENA);
         dietaPomocne.setVek(-10);
         dietaPomocne.setVyska(112);
