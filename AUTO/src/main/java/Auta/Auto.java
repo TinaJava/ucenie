@@ -15,8 +15,8 @@ public class Auto {
     private int velkost_kolies;
     private int pocet_ks;
    
-    public ZnackaAuta ZnackaAuta;
-    public TypAuta TypAuta;
+    protected ZnackaAuta ZnackaAuta;
+    protected TypAuta TypAuta;
    
     
 //vygenerovany konstuktor pre spz auta a turbo typu boolean
@@ -91,6 +91,18 @@ public class Auto {
     public void setTypAuta(TypAuta TypAuta) {
         this.TypAuta = TypAuta;
     }
+
+    public Auto(String spz, double hmotnost, boolean turbo, int pocet_dveri, int velkost_kolies, int pocet_ks, ZnackaAuta ZnackaAuta, TypAuta TypAuta) {
+        this.spz = spz;
+        this.hmotnost = hmotnost;
+        this.turbo = turbo;
+        this.pocet_dveri = pocet_dveri;
+        this.velkost_kolies = velkost_kolies;
+        this.pocet_ks = pocet_ks;
+        this.ZnackaAuta = ZnackaAuta;
+        this.TypAuta = TypAuta;
+    }
+    
 
     @Override
     public String toString() {
