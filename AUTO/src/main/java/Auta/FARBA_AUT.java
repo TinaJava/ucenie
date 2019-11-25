@@ -20,6 +20,8 @@ public enum FARBA_AUT {
     ZELENA,
     ZLTA,
     HNEDA,
-    METALIZA;
+    METALIZA,
+    BOMBOVA;
+   
     
 }
