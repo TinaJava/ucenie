@@ -30,7 +30,6 @@ public class START {
         System.out.println(auto1);
         
         
-        
     }
     
 }

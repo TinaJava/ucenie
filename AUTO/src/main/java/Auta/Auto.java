@@ -91,7 +91,7 @@ public class Auto {
     public void setTypAuta(TypAuta TypAuta) {
         this.TypAuta = TypAuta;
     }
-
+    //vytvorenie konstruktora 
     public Auto(String spz, double hmotnost, boolean turbo, int pocet_dveri, int velkost_kolies, int pocet_ks, ZnackaAuta ZnackaAuta, TypAuta TypAuta) {
         this.spz = spz;
         this.hmotnost = hmotnost;
