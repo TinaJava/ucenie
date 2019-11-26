@@ -30,16 +30,16 @@ public class Starter {
         rod1.setNazovRodiny(" Stevlikovci ");
         rod1.setAdresa(" Dolna Poruba 244, 91443 ");
         // vytvorenie a nastavenie matky v rodine 1
-        rod1.setMama(new ClenRodiny("Gabika", 40));//naplnenie konstruktora menom a vekom ktory sme vztvorili v triede ClenRodiny
-        rod1.getMama().setMeno("Gisela");  // matku cez getter oznacime ze patri do rod1 a mozme s nou dalej pracovat a cez setter nastavime meno Gisela.ale ak chcheme pouzit prednadstavene meno v konstruktori "gabika",musime settre s inymi menami zmazat.
-        System.out.println(rod1.getMama().getMeno());  // vypiseme si meno matky (vypise nam Gisela)
-        rod1.getMama().setMeno("Johanka"); // matke zmenime cez setter meno na Johanka a zaroven jej dame getter abz sme s nou mohli pracovat
-        System.out.println(rod1.getMama().getMeno());  // znovu si vypiseme meno matky (vypise nam vsak uz Johanka)
-        rod1.getMama().setPohlavie(Pohlavie.ZENA);  //slovo set  pouzivame na zmenu mena,veku,hmotnosti atd...
-        rod1.getMama().setVek(35);                  //slovo getMeno,getVek,getHmotnost atd ... pouzivame na vypis v prikazovom riadku sout.
-        rod1.getMama().setVyska(165);
-        rod1.getMama().setHmotnost(65);
-        rod1.getMama().setFarbaVlasov(FarbaVlasov.BLOND);
+        rod1.setMatka(new ClenRodiny("Gabika", 40));//naplnenie konstruktora menom a vekom ktory sme vztvorili v triede ClenRodiny
+        rod1.getMatka().setMeno("Gisela");  // matku cez getter oznacime ze patri do rod1 a mozme s nou dalej pracovat a cez setter nastavime meno Gisela.ale ak chcheme pouzit prednadstavene meno v konstruktori "gabika",musime settre s inymi menami zmazat.
+        System.out.println(rod1.getMatka().getMeno());  // vypiseme si meno matky (vypise nam Gisela)
+        rod1.getMatka().setMeno("Johanka"); // matke zmenime cez setter meno na Johanka a zaroven jej dame getter abz sme s nou mohli pracovat
+        System.out.println(rod1.getMatka().getMeno());  // znovu si vypiseme meno matky (vypise nam vsak uz Johanka)
+        rod1.getMatka().setPohlavie(Pohlavie.ZENA);  //slovo set  pouzivame na zmenu mena,veku,hmotnosti atd...
+        rod1.getMatka().setVek(35);                  //slovo getMeno,getVek,getHmotnost atd ... pouzivame na vypis v prikazovom riadku sout.
+        rod1.getMatka().setVyska(165);
+        rod1.getMatka().setHmotnost(65);
+        rod1.getMatka().setFarbaVlasov(FarbaVlasov.BLOND);
 //        rod1.matka.setOkuliare(true);
         // vytvorenie a nastavenie otca v rodine 1
         rod1.setOtec( new ClenRodiny());
@@ -88,7 +88,7 @@ public class Starter {
         // vytvorenie a naplnenie rodiny 2
         Rodina rod2;
         rod2 = new Rodina();
-        rod2.setMama(new ClenRodiny());
+        rod2.setMatka(new ClenRodiny());
         
         rod2.setOtec(new ClenRodiny());
         rod2.setDeti(new ArrayList<>());//vytvorenie Listu deti v rod2
@@ -99,12 +99,12 @@ public class Starter {
         rod2.setNazovRodiny (" Timkovci ");
         rod2.setAdresa(" Omsenie 105, 91443 ");
         
-        rod2.getMama().setMeno(" Andrea ");
-        rod2.getMama().setPohlavie(Pohlavie.ZENA);
-        rod2.getMama().setVek(33);
-        rod2.getMama().setVyska(175);
-        rod2.getMama().setHmotnost(75);
-        rod2.getMama().setFarbaVlasov(FarbaVlasov.BLOND);
+        rod2.getMatka().setMeno(" Andrea ");
+        rod2.getMatka().setPohlavie(Pohlavie.ZENA);
+        rod2.getMatka().setVek(33);
+        rod2.getMatka().setVyska(175);
+        rod2.getMatka().setHmotnost(75);
+        rod2.getMatka().setFarbaVlasov(FarbaVlasov.BLOND);
         
         rod2.getOtec().setMeno("Igor");
         rod2.getOtec().setPohlavie(Pohlavie.MUZ);

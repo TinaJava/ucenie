@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Rodina {
 
-    private ClenRodiny mama;//s  ctrl r som zmenila matka na mama a potvrdila ze chcem premenovat aj setter a getter
+    private ClenRodiny matka;//s  ctrl r som zmenila mama na matka a potvrdila ze chcem premenovat aj setter a getter
     private ClenRodiny otec;
     private List<ClenRodiny> deti;
 
@@ -28,12 +28,12 @@ public class Rodina {
     private String nazovRodiny;
     private String adresa;
 
-    public ClenRodiny getMama() {
-        return mama;
+    public ClenRodiny getMatka() {
+        return matka;
     }
 
-    public void setMama(ClenRodiny mama) {
-        this.mama = mama;
+    public void setMatka(ClenRodiny matka) {
+        this.matka = matka;
     }
 
     public ClenRodiny getOtec() {
@@ -66,7 +66,7 @@ public class Rodina {
     public String toString() {
         return "Rodina{"
                 + "adresa =" + adresa + ",\n"
-                + "matka =" + mama + ",\n "
+                + "matka =" + matka + ",\n "
                 + "otec =" + otec + ",\n "
                 + "nazovRodiny =" + nazovRodiny + ",\n "
                 + "deti =" + deti + 
