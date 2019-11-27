@@ -33,11 +33,11 @@ public class START {
         auto2 = new Auto("TN",5,500.1);
         auto2.setZnackaAuta(ZnackaAuta.BMW);
         
-    }
-
     Auto auto3;
-    auto3 = new Auto();
+    auto3 = new Auto("BB123BB");
 //nerozumiem tomu preco mi to vypisalo zelenym to auto3. stlacila som nieco??
 //a neviem ani to preco mi podciarkuje cervene konstruktor skusila som aj naplnit a aj tak bol zly.
-// chce to po mne dalsiu triedu auto3 v package auta.je nutne vytvorit dalsiu triedu?   
+// chce to po mne dalsiu triedu auto3 v package auta.je nutne vytvorit dalsiu triedu?
+    }
+    
 }

@@ -28,7 +28,7 @@ public class Auto {
 
     public Auto(String spz) {
         this.spz = spz;
-
+    }
     
     //vytvorenie getrov a setrov
 
