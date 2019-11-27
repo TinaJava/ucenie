@@ -35,9 +35,6 @@ public class START {
         
     Auto auto3;
     auto3 = new Auto("BB123BB");
-//nerozumiem tomu preco mi to vypisalo zelenym to auto3. stlacila som nieco??
-//a neviem ani to preco mi podciarkuje cervene konstruktor skusila som aj naplnit a aj tak bol zly.
-// chce to po mne dalsiu triedu auto3 v package auta.je nutne vytvorit dalsiu triedu?
     }
     
 }

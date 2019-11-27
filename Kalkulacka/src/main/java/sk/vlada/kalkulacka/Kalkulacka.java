@@ -23,10 +23,7 @@ public class Kalkulacka {
      * typ_vysledku moze byt akykolvek typ (jednoduchy ci trieda), alebo void tj
      * metoda nevracia nic ak to nie je void, vyzaduje sa slovicko return v tele
      * metody
-     *
-     * @param a
-     * @param b
-     * @return 
+       
      */
     public double scitaj(double a, double b) {
         return a + b;
