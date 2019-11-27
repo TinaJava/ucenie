@@ -19,7 +19,7 @@ public class START {
        
   
         Auto auto1;       
-        auto1 = new Auto("TT 123B",3);//naplnenie konstruktora s spz a poctom dveri samozrejme ak by som chchela zmenit parametre tak ich dopisem sem do starteru pod ostatne a zmenim ich slovom set.      
+        auto1 = new Auto("TT 123B",3,445.2);//naplnenie konstruktora s spz a poctom dveri samozrejme ak by som chchela zmenit parametre tak ich dopisem sem do starteru pod ostatne a zmenim ich slovom set.      
         auto1.setHmotnost(580);      // tak ako je to tu. auto1.setTurbo(false);
         auto1.setPocet_ks(2);
         auto1.setTurbo(false);
@@ -29,7 +29,12 @@ public class START {
       
         System.out.println(auto1);
         
+        Auto auto2;
+        auto2 = new Auto("TN",5,500.1);
+        auto2.setZnackaAuta(ZnackaAuta.BMW);
+        
+        
+        
         
     }
-    
 }

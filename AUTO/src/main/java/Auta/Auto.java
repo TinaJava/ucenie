@@ -20,12 +20,12 @@ public class Auto {
    
     
 //vygenerovany konstuktor pre spz auta a turbo typu boolean
-    public Auto(String spz,int pocet_dveri) {
+    public Auto(String spz,int pocet_dveri,double hmotnost) {
         this.spz = spz;
         this.pocet_dveri = pocet_dveri;
         this.turbo = true;
     }
-   
+
     //vytvorenie getrov a setrov
 
     public String getSpz() {
