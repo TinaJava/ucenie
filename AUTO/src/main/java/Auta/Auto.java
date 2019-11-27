@@ -26,6 +26,9 @@ public class Auto {
         this.turbo = true;
     }
 
+    public Auto(String spz) {
+        this.spz = spz;
+
     
     //vytvorenie getrov a setrov
 
