@@ -11,11 +11,12 @@ import java.awt.Graphics;
  *
  * @author vlada
  */
-public class trojuholnik extends Utvar {
+public class Trojuholnik extends Utvar {
 
     @Override
     public void vykresliSa(Graphics g) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // zatial sa neviem vykreslit
+        // ale pomocou 3x zavolania metody g.drawLine(..) by to snad slo :)
     }
-    
+
 }

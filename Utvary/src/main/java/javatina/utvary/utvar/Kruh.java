@@ -15,18 +15,9 @@ public class Kruh extends Utvar {
 
     @Override
     public void vykresliSa(Graphics g) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        // zatial sa neviem vykreslit
+        // ale pomocou metody g.drawOval(..) by to snad slo :)
+        // ak by som chcel ten kruh vyplnit farbou tak metoda g.fillOval(..)
     }
-    
-   
-    }
 
-   
-
-   
-
-  
-    
-
-    
-
+}
