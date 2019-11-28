@@ -5,10 +5,17 @@
  */
 package javatina.utvary.utvar;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author vlada
  */
-public class trojuholnik {
+public class trojuholnik extends Utvar {
+
+    @Override
+    public void vykresliSa(Graphics g) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
