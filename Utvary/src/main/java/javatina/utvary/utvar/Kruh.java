@@ -5,6 +5,7 @@
  */
 package javatina.utvary.utvar;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 /**
@@ -17,35 +18,24 @@ public class Kruh extends Utvar {
     private int y;
     private int priemer;
 
-    /**
-     *
-     * @param x
-     * @param y
-     * @param sirka
-     * @param x
-     */
-    public Kruh(
-            int x, int y, int sirka,
-     
-    this.x  = x;
-     
-    this.y  = y;
-     
-    this.priemer  = priemer;
-
-    public int getPriemer();
-     
-    this.y  = y;
-     
-    this.priemer  = priemer;
-
-    public int getPriemer() {
-        return priemer;
+    public Kruh(int x, int y, int priemer) {
+        this.x = x;
+        this.y = y;
+        this.priemer = priemer;
     }
+
+    public Kruh(int x, int y, int priemer, Color farba) {
+        super(farba);
+        this.x = x;
+        this.y = y;
+        this.priemer = priemer;
+    }
+    
+    
 
     @Override
     public void vykresliSa(Graphics g) {
-        g.drawOval(300, 100, 60, 60);
+        g.drawOval(x, y, priemer,priemer);
         // zatial sa neviem vykreslit
         // ale pomocou metody g.drawOval(..) by to snad slo :)
         // ak by som chcel ten kruh vyplnit farbou tak metoda g.fillOval(..)

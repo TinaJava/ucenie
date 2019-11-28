@@ -30,7 +30,7 @@ public class Starter {
         utvary.add(new Stvoruholnik(50, 50, 80, 40, true, Color.BLUE));  // vyplneny obdlznik modrej farby
         utvary.add(new Ciara(0, 0, 100, 100));  // ciara defaultnej farby
         utvary.add(new Ciara(400, 500, 200, 200, Color.RED));  // cervena ciara
-        utvary.add(new Kruh());
+        utvary.add(new Kruh(450,300,400));
         
         // vytvorenie a nastavenie formularu, do kt. sa tie utvary vykreslia
         Formular frm = new Formular(utvary);  // volam konstruktor o odovzdavam mu zoznam utvarov
