@@ -13,6 +13,36 @@ import java.awt.Graphics;
  */
 public class Kruh extends Utvar {
 
+    private int x;
+    private int y;
+    private int priemer;
+
+    /**
+     *
+     * @param x
+     * @param y
+     * @param sirka
+     * @param x
+     */
+    public Kruh(
+            int x, int y, int sirka,
+     
+    this.x  = x;
+     
+    this.y  = y;
+     
+    this.priemer  = priemer;
+
+    public int getPriemer();
+     
+    this.y  = y;
+     
+    this.priemer  = priemer;
+
+    public int getPriemer() {
+        return priemer;
+    }
+
     @Override
     public void vykresliSa(Graphics g) {
         g.drawOval(300, 100, 60, 60);
