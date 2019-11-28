@@ -71,10 +71,10 @@ public class Stvoruholnik extends Utvar {
      */
     @Override
     public void vykresliSa(Graphics g) {
+        g.setColor(farba);  // nastavi sa farba, kt. chcem kreslit
         g.drawRect(x, y, sirka, vyska);  // vykreslia sa obrysy
         if (vyplnit) {
             // ak je nastaveve vyplnit, tak sa stvoruholnik vyplni farbou
-            g.setColor(farba);  // nastavi sa farba, kt. chceme vyplnat
             g.fillRect(x, y, sirka, vyska);  // vyplnime stvoruholnik
         }
     }

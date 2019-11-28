@@ -30,8 +30,9 @@ public class Starter {
         utvary.add(new Stvoruholnik(50, 50, 80, 40, true, Color.BLUE));  // vyplneny obdlznik modrej farby
         utvary.add(new Ciara(0, 0, 100, 100));  // ciara defaultnej farby
         utvary.add(new Ciara(400, 500, 200, 200, Color.RED));  // cervena ciara
-        utvary.add(new Kruh(450,300,400));
-        
+        utvary.add(new Kruh(200, 200, 100, false));
+        utvary.add(new Kruh(500, 300, 200, true, Color.YELLOW));
+
         // vytvorenie a nastavenie formularu, do kt. sa tie utvary vykreslia
         Formular frm = new Formular(utvary);  // volam konstruktor o odovzdavam mu zoznam utvarov
         frm.setTitle("Útvary");  // nastavim nadpis formularu
@@ -39,5 +40,5 @@ public class Starter {
         frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // nastavim, ze sa ma cely projekt skoncit, ked sa klikne na krizik na formulari
         frm.setVisible(true);  // zobrazenie formularu (zavola sa jeho metoda paint)
     }
-    
+
 }
