@@ -20,7 +20,7 @@ public abstract class Utvar {
     protected Color farba;  // farba utvaru
 
     /**
-     * Konstruktor, kt. nastavy defaultnu farbu utvaru
+     * Konstruktor, kt. nastavi defaultnu farbu utvaru
      */
     public Utvar() {
         this.farba = Color.BLACK;  // defaultna farba je cierna
@@ -42,5 +42,5 @@ public abstract class Utvar {
      * @param g - Objekt typu Graphics, kt. sluzi na kreslenie
      */
     public abstract void vykresliSa(Graphics g);
-
+    
 }

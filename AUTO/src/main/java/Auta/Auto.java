@@ -30,6 +30,7 @@ public class Auto {
         this.spz = spz;
     }
     
+
     //vytvorenie getrov a setrov
 
     public String getSpz() {
