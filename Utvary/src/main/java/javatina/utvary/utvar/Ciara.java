@@ -66,6 +66,6 @@ public class Ciara extends Utvar {
     public void vykresliSa(Graphics g) {
         g.setColor(farba);  // nastavim farbu
         g.drawLine(zaciatokX, zaciatokY, koniecX, koniecY);  // vykreslim ciaru
-    }
+    } 
 
 }

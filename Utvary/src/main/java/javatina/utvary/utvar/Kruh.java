@@ -15,6 +15,7 @@ public class Kruh extends Utvar {
 
     @Override
     public void vykresliSa(Graphics g) {
+        g.drawOval(300, 100, 60, 60);
         // zatial sa neviem vykreslit
         // ale pomocou metody g.drawOval(..) by to snad slo :)
         // ak by som chcel ten kruh vyplnit farbou tak metoda g.fillOval(..)

@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import javatina.utvary.utvar.Ciara;
+import javatina.utvary.utvar.Kruh;
 import javatina.utvary.utvar.Stvoruholnik;
 import javatina.utvary.utvar.Utvar;
 import javax.swing.JFrame;
@@ -29,6 +30,7 @@ public class Starter {
         utvary.add(new Stvoruholnik(50, 50, 80, 40, true, Color.BLUE));  // vyplneny obdlznik modrej farby
         utvary.add(new Ciara(0, 0, 100, 100));  // ciara defaultnej farby
         utvary.add(new Ciara(400, 500, 200, 200, Color.RED));  // cervena ciara
+        utvary.add(new Kruh());
         
         // vytvorenie a nastavenie formularu, do kt. sa tie utvary vykreslia
         Formular frm = new Formular(utvary);  // volam konstruktor o odovzdavam mu zoznam utvarov
