@@ -18,17 +18,17 @@ public class Starter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        boolean Koza = false;
+       
         // TODO code application logic here
-
-        System.out.println(Koza);
+       
 
         Zviera koza;
         koza = new Zviera(180, 102, true, "Koza Horska", true);//naplnenie konstruktora pre Koza 
         koza.setHmotnost(110);
 
         System.out.println(koza);
-
+        
+        
     }
 
 }

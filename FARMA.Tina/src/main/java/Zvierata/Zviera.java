@@ -10,6 +10,10 @@ package Zvierata;
  * @author vlada
  */
 public class Zviera {
+    private Zviera koza;
+    private Zviera Krava;
+    private Zviera hus;
+    private Zviera prasa;
 
     private double hmotnost;
     private int vyska;
