@@ -23,7 +23,7 @@ public class Starter {
        
 
         Zviera koza;
-        koza = new Zviera(180, 102, true, "Koza Horska", true);//naplnenie konstruktora pre Koza 
+        koza = new Koza(180, 102, true, "Koza Horska", true);//naplnenie konstruktora pre Koza 
         koza.setHmotnost(110);
 
         System.out.println(koza);
