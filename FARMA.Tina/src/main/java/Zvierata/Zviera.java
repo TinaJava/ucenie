@@ -21,6 +21,10 @@ public class Zviera {
     private String nazov;
     private boolean cicavec;
 
+    public Zviera(int i, int i0, boolean b, String koza_Horska, boolean b0, boolean b1, boolean b2, boolean b3) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 //vytvorenie sett a gett pre triedu zviera
     public double getHmotnost() {
         return hmotnost;
@@ -71,4 +75,10 @@ public class Zviera {
         this.cicavec = cicavec;
     }
 
+    @Override
+    public String toString() {
+        return "Zviera{" + "koza=" + koza + ", Krava=" + Krava + ", hus=" + hus + ", prasa=" + prasa + ", hmotnost=" + hmotnost + ", vyska=" + vyska + ", uzitkove=" + uzitkove + ", nazov=" + nazov + ", cicavec=" + cicavec + '}';
+    }
+
+    
 }

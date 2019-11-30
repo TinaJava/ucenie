@@ -15,7 +15,7 @@ public class Koza extends Zviera {
     private boolean maso;
     private boolean kozusina;
 
-    public Koza(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec) {
+    public Koza(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec,boolean mlieko,boolean maso,boolean kozusina) {
         super(hmotnost, vyska, uzitkove, nazov, cicavec);
     }
 
