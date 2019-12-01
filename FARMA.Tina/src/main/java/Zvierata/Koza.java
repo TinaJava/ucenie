@@ -20,6 +20,9 @@ public class Koza extends Zviera {
             boolean mlieko, boolean maso, boolean kozusina
     ) {
         super(nazov, hmotnost, vyska, uzitkove, cicavec);
+        this.mlieko = mlieko;
+        this.maso = maso;
+        this.kozusina = kozusina;
     }
 
     public boolean isMlieko() {
