@@ -15,14 +15,14 @@ public class Koza extends Zviera {
     private boolean maso;
     private boolean kozusina;
 
-    public Koza(
-            String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec,
-            boolean mlieko, boolean maso, boolean kozusina
-    ) {
+    public Koza(boolean mlieko, boolean maso, boolean kozusina, String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec) {
         super(nazov, hmotnost, vyska, uzitkove, cicavec);
-        this.mlieko = mlieko;
-        this.maso = maso;
-        this.kozusina = kozusina;
+        {
+            this.mlieko = mlieko;
+            this.maso = maso;
+            this.kozusina = kozusina;
+        }
+
     }
 
     public boolean isMlieko() {

@@ -5,7 +5,10 @@
  */
 package Produkcia;
 
+import Zvierata.Hus;
 import Zvierata.Koza;
+import Zvierata.Krava;
+import Zvierata.Prasa;
 import Zvierata.Zviera;
 
 /**
@@ -20,13 +23,20 @@ public class Starter {
     public static void main(String[] args) {
 
         Zviera koza;
-        koza = new Koza(
-                "Koza Horska", 180.5, 102, true, true,
-                true, true, true
-        );//naplnenie konstruktora pre Koza
-        koza.setHmotnost(110);
+        koza = new Koza(true, true, false, "koza horska", 180.5, 102, true, true);//naplnenie konstruktora pre Koza
         System.out.println(koza);
 
+        Zviera krava;
+        krava = new Krava("Malina", 550.5, 158, true, true, true, true, true, true);
+        System.out.println(krava);
+
+        Zviera hus;
+        hus = new Hus("Hus biela", 12.5, 32, true, false, true, true, true);
+        System.out.println(hus);
+
+        Zviera prasa;
+        prasa = new Prasa("Mangalica", 220.55, 104, true, true, true, true, true);
+        System.out.println(prasa);
     }
 
 }
