@@ -10,13 +10,16 @@ package Zvierata;
  * @author vlada
  */
 public class Koza extends Zviera {
-    
+
     private boolean mlieko;
     private boolean maso;
     private boolean kozusina;
 
-    public Koza(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec) {
-        super(hmotnost, vyska, uzitkove, nazov, cicavec);
+    public Koza(
+            String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec,
+            boolean mlieko, boolean maso, boolean kozusina
+    ) {
+        super(nazov, hmotnost, vyska, uzitkove, cicavec);
     }
 
     public boolean isMlieko() {
@@ -45,10 +48,16 @@ public class Koza extends Zviera {
 
     @Override
     public String toString() {
-        return "Koza{" + "mlieko=" + mlieko + ", maso=" + maso + ", kozusina=" + kozusina + '}';
+        return "Koza{"
+                + "nazov=" + nazov + ", "
+                + "hmotnost=" + hmotnost + ", "
+                + "vyska=" + vyska + ", "
+                + "uzitkove=" + uzitkove + ", "
+                + "cicavec=" + cicavec + ", "
+                + "mlieko=" + mlieko + ", "
+                + "maso=" + maso + ", "
+                + "kozusina=" + kozusina
+                + '}';
     }
-    
-    
-    
-    
+
 }

@@ -10,13 +10,19 @@ package Zvierata;
  * @author vlada
  */
 public class Prasa extends Zviera {
-    
+
     private boolean maso;
     private boolean mast;
     private boolean vnutornosti;
 
-    public Prasa(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec) {
-        super(hmotnost, vyska, uzitkove, nazov, cicavec);
+    public Prasa(
+            String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec,
+            boolean maso, boolean mast, boolean vnutornosti
+    ) {
+        super(nazov, hmotnost, vyska, uzitkove, cicavec);
+        this.maso = maso;
+        this.mast = mast;
+        this.vnutornosti = vnutornosti;
     }
 
     public boolean isMaso() {
@@ -45,9 +51,16 @@ public class Prasa extends Zviera {
 
     @Override
     public String toString() {
-        return "Prasa{" + "maso=" + maso + ", mast=" + mast + ", vnutornosti=" + vnutornosti + '}';
+        return "Prasa{"
+                + "nazov=" + nazov + ", "
+                + "hmotnost=" + hmotnost + ", "
+                + "vyska=" + vyska + ", "
+                + "uzitkove=" + uzitkove + ", "
+                + "cicavec=" + cicavec + ", "
+                + "maso=" + maso + ", "
+                + "mast=" + mast + ", "
+                + "vnutornosti=" + vnutornosti
+                + '}';
     }
-    
-    
-    
+
 }

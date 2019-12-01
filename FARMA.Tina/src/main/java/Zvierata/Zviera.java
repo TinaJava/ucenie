@@ -9,19 +9,24 @@ package Zvierata;
  *
  * @author vlada
  */
-public class Zviera {
-    private Zviera koza;
-    private Zviera Krava;
-    private Zviera hus;
-    private Zviera prasa;
+public abstract class Zviera {
 
-    private double hmotnost;
-    private int vyska;
-    private boolean uzitkove;
-    private String nazov;
-    private boolean cicavec;
+    protected String nazov;
+    protected double hmotnost;
+    protected int vyska;
+    protected boolean uzitkove;
+    protected boolean cicavec;
 
-//vytvorenie sett a gett pre triedu zviera
+    //vytvorenie konstruktora
+    public Zviera(String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec) {
+        this.nazov = nazov;
+        this.hmotnost = hmotnost;
+        this.vyska = vyska;
+        this.uzitkove = uzitkove;
+        this.cicavec = cicavec;
+    }
+
+    //vytvorenie sett a gett pre triedu zviera
     public double getHmotnost() {
         return hmotnost;
     }
@@ -62,13 +67,15 @@ public class Zviera {
         this.cicavec = cicavec;
     }
 
-    //vytvorenie konstruktora
-    public Zviera(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec) {
-        this.hmotnost = hmotnost;
-        this.vyska = vyska;
-        this.uzitkove = uzitkove;
-        this.nazov = nazov;
-        this.cicavec = cicavec;
+    @Override
+    public String toString() {
+        return "Zviera{"
+                + "nazov=" + nazov + ", "
+                + "hmotnost=" + hmotnost + ", "
+                + "vyska=" + vyska + ", "
+                + "uzitkove=" + uzitkove + ", "
+                + "cicavec=" + cicavec
+                + '}';
     }
 
 }

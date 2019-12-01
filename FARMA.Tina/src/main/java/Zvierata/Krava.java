@@ -10,14 +10,21 @@ package Zvierata;
  * @author vlada
  */
 public class Krava extends Zviera {
-    
+
     private boolean rohovina;
     private boolean mlieko;
     private boolean kozusina;
     private boolean maso;
 
-    public Krava(double hmotnost, int vyska, boolean uzitkove, String nazov, boolean cicavec) {
-        super(hmotnost, vyska, uzitkove, nazov, cicavec);
+    public Krava(
+            String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec,
+            boolean rohovina, boolean mlieko, boolean kozusina, boolean maso
+    ) {
+        super(nazov, hmotnost, vyska, uzitkove, cicavec);
+        this.rohovina = rohovina;
+        this.mlieko = mlieko;
+        this.kozusina = kozusina;
+        this.maso = maso;
     }
 
     public boolean isRohovina() {
@@ -54,9 +61,17 @@ public class Krava extends Zviera {
 
     @Override
     public String toString() {
-        return "Krava{" + "rohovina=" + rohovina + ", mlieko=" + mlieko + ", kozusina=" + kozusina + ", maso=" + maso + '}';
+        return "Krava{"
+                + "nazov=" + nazov + ", "
+                + "hmotnost=" + hmotnost + ", "
+                + "vyska=" + vyska + ", "
+                + "uzitkove=" + uzitkove + ", "
+                + "cicavec=" + cicavec + ", "
+                + "rohovina=" + rohovina + ", "
+                + "mlieko=" + mlieko + ", "
+                + "kozusina=" + kozusina + ", "
+                + "maso=" + maso
+                + '}';
     }
-    
-    
-    
+
 }
