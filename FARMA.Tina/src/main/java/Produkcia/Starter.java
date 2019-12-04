@@ -10,6 +10,8 @@ import Zvierata.Koza;
 import Zvierata.Krava;
 import Zvierata.Prasa;
 import Zvierata.Zviera;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -37,29 +39,34 @@ public class Starter {
         Zviera prasa;
         prasa = new Prasa("Mangalica", 220.55, 104, true, true, true, true, true);
         System.out.println(prasa);
-       
-        String[]zvierata;
+
+        String[] zvierata;
         zvierata = new String[4];
-        zvierata[0]= "Koza";
-        zvierata[1]= "Krava";
-        zvierata[2]= "Prasa";
-        zvierata[3]= "Hus";
-        
-        for (int i = 0;i < zvierata.length;i++){
-            System.out.println(i + " ."+ zvierata[i]);
-            
-            String[]cicavci;
+        zvierata[0] = "Koza";
+        zvierata[1] = "Krava";
+        zvierata[2] = "Prasa";
+        zvierata[3] = "Hus";
+
+        for (int i = 0; i < zvierata.length; i++) {
+            System.out.println(i + " ." + zvierata[i]);
+
+            String[] cicavci;
             cicavci = new String[3];
             cicavci[0] = "Krava";
             cicavci[1] = "Koza";
             cicavci[2] = "Prasa";
-            
-            for(String savci:cicavci){
+
+            for (String savci : cicavci) {
                 System.out.println(savci);
+
+                List<String> Zviera1;
+                Zviera1 = new ArrayList<>();
+                Zviera1.addAll(Zviera1);
+
+                System.out.println(Zviera1.size());
+
             }
-            
-            
-            
+
         }
     }
 
