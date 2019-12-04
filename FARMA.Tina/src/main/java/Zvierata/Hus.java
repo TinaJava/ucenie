@@ -34,6 +34,7 @@ public class Hus extends Zviera {
         this.perie = perie;
         this.vajcia = vajcia;
         this.maso = maso;
+        this.cicavec = false;
     }
 
     public boolean isPerie() {

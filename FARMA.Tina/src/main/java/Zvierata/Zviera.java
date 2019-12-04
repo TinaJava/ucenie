@@ -24,14 +24,16 @@ public abstract class Zviera {
         this.vyska = vyska;
         this.uzitkove = uzitkove;
         this.cicavec = cicavec;
+   
     }
-
+    
     //vytvorenie sett a gett pre triedu zviera
     public double getHmotnost() {
-        if(cicavec==cicavec);
-        return hmotnost +20.5;
-    } else {
-        return hmotnost;
+        if (cicavec == cicavec);
+        return hmotnost + 20.5;
+    }
+        else {
+        return hmotnost; 
     }
 
     public void setHmotnost(double hmotnost) {
