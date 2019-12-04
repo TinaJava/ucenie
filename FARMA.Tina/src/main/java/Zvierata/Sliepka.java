@@ -15,12 +15,11 @@ public class Sliepka extends Zviera {
     private boolean maso;
     private boolean perie;
 
-    public Sliepka(boolean vajcia, boolean maso, boolean perie, String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec) {
-        super(nazov, hmotnost, vyska, uzitkove, cicavec);
+    public Sliepka(boolean vajcia, boolean maso, boolean perie, String nazov, double hmotnost, int vyska, boolean uzitkove) {
+        super(nazov, hmotnost, vyska, uzitkove, false);  // to iste ako pre Hus
         this.vajcia = vajcia;
         this.maso = maso;
         this.perie = perie;
-        this.cicavec = false;
     }
 
     public boolean isVajcia() {
@@ -49,9 +48,16 @@ public class Sliepka extends Zviera {
 
     @Override
     public String toString() {
-        return "Sliepka{" + "vajcia=" + vajcia + ", maso=" + maso + ", perie=" + perie + '}';
+        return "Sliepka{"
+                + "nazov=" + nazov + ", "
+                + "hmotnost=" + hmotnost + ", "
+                + "vyska=" + vyska + ", "
+                + "uzitkove=" + uzitkove + ", "
+                + "cicavec=" + cicavec + ", "
+                + "vajcia=" + vajcia + ", "
+                + "maso=" + maso + ", "
+                + "perie=" + perie
+                + '}';
     }
-    
-    
 
 }

@@ -27,14 +27,13 @@ public class Hus extends Zviera {
      * @param cicavec
      */
     public Hus(
-            String nazov, double hmotnost, int vyska, boolean uzitkove, boolean cicavec,
+            String nazov, double hmotnost, int vyska, boolean uzitkove,
             boolean perie, boolean vajcia, boolean maso
     ) {
-        super(nazov, hmotnost, vyska, uzitkove, cicavec);
+        super(nazov, hmotnost, vyska, uzitkove, false);  // ak chces natvrdo povedat, ze Hus nie je cicavec, tak to mozes nastavit i takto
         this.perie = perie;
         this.vajcia = vajcia;
         this.maso = maso;
-        this.cicavec = false;
     }
 
     public boolean isPerie() {
