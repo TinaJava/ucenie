@@ -28,6 +28,9 @@ public abstract class Zviera {
 
     //vytvorenie sett a gett pre triedu zviera
     public double getHmotnost() {
+        if(cicavec==cicavec);
+        return hmotnost +20.5;
+    } else {
         return hmotnost;
     }
 
