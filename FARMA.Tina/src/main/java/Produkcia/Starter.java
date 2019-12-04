@@ -41,15 +41,16 @@ public class Starter {
         System.out.println(prasa);
 
         String[] zvierata;
-        zvierata = new String[4];
+        zvierata = new String[5];
         zvierata[0] = "Koza";
         zvierata[1] = "Krava";
         zvierata[2] = "Prasa";
         zvierata[3] = "Hus";
+        zvierata[4] = "Sliepka";
 
         for (int i = 0; i < zvierata.length; i++) {
             System.out.println(i + " ." + zvierata[i]);
-
+        }
             String[] cicavci;
             cicavci = new String[3];
             cicavci[0] = "Krava";
@@ -67,7 +68,7 @@ public class Starter {
 
             }
 
-        }
+        
     }
 
 }
