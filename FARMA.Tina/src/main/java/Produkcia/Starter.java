@@ -11,6 +11,8 @@ import Zvierata.Krava;
 import Zvierata.Prasa;
 import Zvierata.Sliepka;
 import Zvierata.Zviera;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -91,7 +93,21 @@ public class Starter {
                 System.out.println(zviera);  // vypis zvierata, kt. je cicavec (tj splnilo if)
             }
         }
-        
-    }
 
+        List<Zviera> zvierata2;
+        zvierata2 = new ArrayList<>();
+        zvierata2.add(new Koza(true, true, false, "Koza biela rohata", 180.5, 102, true, true));
+        zvierata2.add(new Krava("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
+        zvierata2.add(new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
+        zvierata2.add(new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
+        zvierata2.add(new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20, true));
+
+        System.out.println("-----------------------------------------------------");
+        System.out.println(" L i s t  Z v i e r a t  : ");
+        for (Zviera vypis : zvierata2) {
+            System.out.println(vypis);
+        }
+    }
+    
+    
 }

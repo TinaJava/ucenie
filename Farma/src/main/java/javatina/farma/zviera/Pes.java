@@ -9,23 +9,28 @@ package javatina.farma.zviera;
  *
  * @author Stevlik Marian
  */
-public abstract class Zviera {
-    
-    protected String Meno;
-    protected double Vyska;
-    protected double Vaha;
-    protected boolean Domace_Zviera;
-    protected boolean Cicavec;
+public class Pes extends Zviera {
 
-    public Zviera(String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec) {
-        this.Meno = Meno;
-        this.Vyska = Vyska;
-        this.Vaha = Vaha;
-        this.Domace_Zviera = Domace_Zviera;
-        this.Cicavec = Cicavec;
+    private boolean StrazneZviera;
+
+    public Pes(String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec, boolean StrazneZviera) {
+        super(Meno, Vyska, Vaha, Domace_Zviera, Cicavec);
+
+        this.StrazneZviera = StrazneZviera;
+    }
+
+    public boolean isStrazneZviera() {
+        return StrazneZviera;
+    }
+
+    public void setStrazneZviera(boolean StrazneZviera) {
+        this.StrazneZviera = StrazneZviera;
     }
 
     public String getMeno() {
+//        if (StrazneZviera) {
+//            return Meno + "Mortal";
+//        } else {
         return Meno;
     }
 
@@ -67,18 +72,7 @@ public abstract class Zviera {
 
     @Override
     public String toString() {
-        return "Zviera{" + "Meno=" + Meno
-                + ", Vyska=" + Vyska 
-                + ", Vaha=" + Vaha 
-                + ", Domace_Zviera=" 
-                + Domace_Zviera 
-                + ", Cicavec=" + Cicavec 
-                + '}';
+        return "Pes{" + "StrazneZviera=" + StrazneZviera + '}';
     }
 
-    
-    }
-    
-    
-    
-
+}
