@@ -5,30 +5,24 @@
  */
 package javatina.farma.zviera;
 
-import java.util.Map;
-
 /**
  *
  * @author Stevlik Marian
  */
-public class Zviera {
+public abstract class Zviera {
 
     protected String meno;
     protected double vyska;
     protected double vaha;
-    protected boolean domace_zviera;
+    protected boolean domaceZviera;
     protected boolean cicavec;
 
-    public Zviera(String meno, double vyska, double vaha, boolean domace_zviera, boolean cicavec) {
+    public Zviera(String meno, double vyska, double vaha, boolean domaceZviera, boolean cicavec) {
         this.meno = meno;
         this.vyska = vyska;
         this.vaha = vaha;
-        this.domace_zviera = domace_zviera;
+        this.domaceZviera = domaceZviera;
         this.cicavec = cicavec;
-    }
-
-    public Zviera() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getMeno() {
@@ -55,12 +49,12 @@ public class Zviera {
         this.vaha = vaha;
     }
 
-    public boolean isDomace_zviera() {
-        return domace_zviera;
+    public boolean isDomaceZviera() {
+        return domaceZviera;
     }
 
-    public void setDomace_zviera(boolean domace_zviera) {
-        this.domace_zviera = domace_zviera;
+    public void setDomaceZviera(boolean domaceZviera) {
+        this.domaceZviera = domaceZviera;
     }
 
     public boolean isCicavec() {
@@ -74,20 +68,12 @@ public class Zviera {
     @Override
     public String toString() {
         return "Zviera{"
-                + "meno=" + meno
-                + ", vyska=" + vyska
-                + ", vaha=" + vaha
-                + ", domace_zviera=" + domace_zviera
-                + ", cicavec=" + cicavec
+                + "meno=" + meno + ", "
+                + "vyska=" + vyska + ", "
+                + "vaha=" + vaha + ", "
+                + "domaceZviera=" + domaceZviera + ", "
+                + "cicavec=" + cicavec
                 + '}';
-    }
-
-    public void put(String string, Zviera zviera) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Iterable<Map.Entry<String, Zviera>> entrySet() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

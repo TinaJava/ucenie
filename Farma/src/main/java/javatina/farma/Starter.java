@@ -7,7 +7,6 @@ package javatina.farma;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import javatina.farma.zviera.Kivi;
@@ -25,57 +24,60 @@ public class Starter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
 
+        // jednotlivci
+        System.out.println("................................................");
+        System.out.println("Zvierata ako jednotlivci");
+        System.out.println("................................................");
         Zviera kivi;
         kivi = new Kivi("Kivinecka", 5.2, 0.55, true, true, true);
         System.out.println(kivi);
-
         Zviera pes;
         pes = new Pes("Mortal", 1.10, 95.5, true, true, true);
         System.out.println(pes);
-
         Zviera macka;
         macka = new Macka(true, true, "Luigi", 25.8, 4.5, true, true);
         System.out.println(macka);
 
+        // pole zvierat
         System.out.println("................................................");
-        System.out.println("vypis domacich zvierat s ich vlastnostami");
-        // vytvorenie pola zvierat a jeho naplnenie
-        Zviera[] zvierata;
-        zvierata = new Zviera[3];
-        zvierata[0] = new Kivi("kiva", 5.2, 0.55, true, true, true);
-        zvierata[1] = new Pes("Mort", 110.2, 95.5, true, true, true);
-        zvierata[2] = new Macka(true, true, "Luigi", 35.2, 7.2, true, false);
-
-        for (Zviera zvieratko : zvierata) {
-            System.out.println(zvieratko);
-            System.out.println("////////////////////////////////////////////////");
+        System.out.println("Zvierata ako pole");
+        System.out.println("................................................");
+        Zviera[] zvierataPole;
+        zvierataPole = new Zviera[3];
+        zvierataPole[0] = new Kivi("kiva", 5.2, 0.55, true, true, true);
+        zvierataPole[1] = new Pes("Mort", 110.2, 95.5, true, true, true);
+        zvierataPole[2] = new Macka(true, true, "Luigi", 35.2, 7.2, true, false);
+        // vypis
+        for (Zviera zviera : zvierataPole) {
+            System.out.println(zviera);
         }
 
-        //vytvorenie listu zvierat a jeho naplnenie
-        List<Zviera> zvieratka;
-        zvieratka = new ArrayList<>();
-        zvieratka.add(new Kivi("skrecok", 5.5, 1.55, true, true, true));
-        zvieratka.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        zvieratka.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-
-        for (Zviera zver : zvieratka) {
-            System.out.println(zver);
+        // list zvierat
+        System.out.println("................................................");
+        System.out.println("Zvierata ako list");
+        System.out.println("................................................");
+        List<Zviera> zvierataList;
+        zvierataList = new ArrayList<>();
+        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, true, true));
+        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        // vypis
+        for (Zviera zviera : zvierataList) {
+            System.out.println(zviera);
         }
 
-        Map<String, Zviera> zvieratko;
-        zvieratko = new HashMap<>();
-        Zviera zviera1;
-
-        zviera1 = new Zviera();
-        zviera1.setMeno("Kivi");
-        zvieratko.put("2020", zviera1);
-
-        for (Iterator<Map.Entry<String, Zviera>> it = zvieratko.entrySet().iterator(); it.hasNext();) {
-            Map.Entry<String, Zviera> nejakeslovo = it.next();
-            System.out.println(nejakeslovo.getKey());
-            System.out.println(nejakeslovo.getValue());
+        // mapa zvierat
+        System.out.println("................................................");
+        System.out.println("Zvierata ako mapa");
+        System.out.println("................................................");
+        Map<String, Zviera> zvierataMap;
+        zvierataMap = new HashMap<>();
+        zvierataMap.put("0001", new Kivi("skrecok", 5.5, 1.55, true, true, true));
+        // vypis
+        for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
+            System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
+
     }
 }

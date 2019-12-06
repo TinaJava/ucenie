@@ -14,8 +14,8 @@ public class Macka extends Zviera {
     private boolean maznacik;
     private boolean lapacMysi;
 
-    public Macka(boolean maznacik, boolean lapacMysi, String meno, double vyska, double vaha, boolean domace_zviera, boolean cicavec) {
-        super(meno, vyska, vaha, domace_zviera, cicavec);
+    public Macka(boolean maznacik, boolean lapacMysi, String meno, double vyska, double vaha, boolean domaceZviera, boolean cicavec) {
+        super(meno, vyska, vaha, domaceZviera, cicavec);
 
         this.maznacik = maznacik;
         this.lapacMysi = lapacMysi;
@@ -37,56 +37,16 @@ public class Macka extends Zviera {
         this.lapacMysi = lapacMysi;
     }
 
-    public String getMeno() {
-        return meno;
-    }
-
-    public void setMeno(String meno) {
-        this.meno = meno;
-    }
-
-    public double getVyska() {
-        return vyska;
-    }
-
-    public void setVyska(double vyska) {
-        this.vyska = vyska;
-    }
-
-    public double getVaha() {
-        return vaha;
-    }
-
-    public void setVaha(double vaha) {
-        this.vaha = vaha;
-    }
-
-    public boolean isDomace_zviera() {
-        return domace_zviera;
-    }
-
-    public void setDomace_zviera(boolean domace_zviera) {
-        this.domace_zviera = domace_zviera;
-    }
-
-    public boolean isCicavec() {
-        return cicavec;
-    }
-
-    public void setCicavec(boolean cicavec) {
-        this.cicavec = cicavec;
-    }
-
     @Override
     public String toString() {
         return "Macka{"
-                + "maznacik=" + maznacik
-                + ", lapacMysi=" + lapacMysi
-                + "meno=" + meno
-                + ", vyska=" + vyska
-                + ", vaha=" + vaha
-                + ", domace_zviera=" + domace_zviera
-                + ", cicavec=" + cicavec
+                + "meno=" + meno + ", "
+                + "vyska=" + vyska + ", "
+                + "vaha=" + vaha + ", "
+                + "domaceZviera=" + domaceZviera + ", "
+                + "cicavec=" + cicavec + ", "
+                + "maznacik=" + maznacik + ", "
+                + "lapacMysi=" + lapacMysi
                 + '}';
     }
 
