@@ -34,9 +34,12 @@ public class Starter {
 
         Zviera macka;
         macka = new Macka("Luigi", 25.8, 4.5, true, true, true, false);
-        System.out.println(macka);
+        System.out.println(macka);{
 
-        // vytvorenie pola zvierat a jeho naplnenie
+
+            System.out.println("....................................................");
+            System.out.println("vypis domacich zvierat s ich vlastnostami");
+    }        // vytvorenie pola zvierat a jeho naplnenie
         Zviera[] zvierata;
         zvierata = new Zviera[3];
         zvierata[0] = new Kivi("kiva", 5.2, 0.55, true, true, true);
@@ -45,21 +48,19 @@ public class Starter {
 
         for (Zviera zvieratko : zvierata) {
             System.out.println(zvieratko);
-
-            //vytvorenie listu zvierat a jeho naplnenie
-            List<Zviera> zvieratka;
-            zvieratka = new ArrayList<>();
-            zvieratka.add(new Kivi("skrecok", 5.2, 0.55, true, true, true));
-            zvieratka.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-            zvieratka.add(new Macka("ciciak", 35.2, 6.8, true, true, true, true));
-
-            System.out.println("....................................................");
-            System.out.println("vypis domacich zvierat s ich vlastnostami");
-
-            for (Zviera zver : zvieratka) {
-                System.out.println(zver);
-
-            }
         }
+
+        //vytvorenie listu zvierat a jeho naplnenie
+        List<Zviera> zvieratka;
+        zvieratka = new ArrayList<>();
+        zvieratka.add(new Kivi("skrecok", 5.2, 0.55, true, true, true));
+        zvieratka.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        zvieratka.add(new Macka("ciciak", 35.2, 6.8, true, true, true, true));
+
+        for (Zviera zver : zvieratka) {
+            System.out.println(zver);
+            System.out.println("....................................................");
+        }
+
     }
 }
