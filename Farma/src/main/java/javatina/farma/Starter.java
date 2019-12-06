@@ -6,7 +6,10 @@
 package javatina.farma;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import javatina.farma.zviera.Kivi;
 import javatina.farma.zviera.Macka;
 import javatina.farma.zviera.Pes;
@@ -61,5 +64,18 @@ public class Starter {
             System.out.println(zver);
         }
 
+        Map<String, Zviera> zvieratko;
+        zvieratko = new HashMap<>();
+        Zviera zviera1;
+
+        zviera1 = new Zviera();
+        zviera1.setMeno("Kivi");
+        zvieratko.put("2020", zviera1);
+
+        for (Iterator<Map.Entry<String, Zviera>> it = zvieratko.entrySet().iterator(); it.hasNext();) {
+            Map.Entry<String, Zviera> nejakeslovo = it.next();
+            System.out.println(nejakeslovo.getKey());
+            System.out.println(nejakeslovo.getValue());
+        }
     }
 }

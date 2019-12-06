@@ -5,11 +5,13 @@
  */
 package javatina.farma.zviera;
 
+import java.util.Map;
+
 /**
  *
  * @author Stevlik Marian
  */
-public abstract class Zviera {
+public class Zviera {
 
     protected String meno;
     protected double vyska;
@@ -23,6 +25,10 @@ public abstract class Zviera {
         this.vaha = vaha;
         this.domace_zviera = domace_zviera;
         this.cicavec = cicavec;
+    }
+
+    public Zviera() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getMeno() {
@@ -74,6 +80,14 @@ public abstract class Zviera {
                 + ", domace_zviera=" + domace_zviera
                 + ", cicavec=" + cicavec
                 + '}';
+    }
+
+    public void put(String string, Zviera zviera) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Iterable<Map.Entry<String, Zviera>> entrySet() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
