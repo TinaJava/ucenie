@@ -34,12 +34,12 @@ public class Starter {
 
         Zviera macka;
         macka = new Macka("Luigi", 25.8, 4.5, true, true, true, false);
-        System.out.println(macka);{
+        System.out.println(macka);
+        
 
-
-            System.out.println("....................................................");
+            System.out.println("................................................");
             System.out.println("vypis domacich zvierat s ich vlastnostami");
-    }        // vytvorenie pola zvierat a jeho naplnenie
+                // vytvorenie pola zvierat a jeho naplnenie
         Zviera[] zvierata;
         zvierata = new Zviera[3];
         zvierata[0] = new Kivi("kiva", 5.2, 0.55, true, true, true);
