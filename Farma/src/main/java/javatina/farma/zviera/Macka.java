@@ -11,73 +11,83 @@ package javatina.farma.zviera;
  */
 public class Macka extends Zviera {
 
-    private boolean Maznacik;
-    private boolean LapacMysi;
+    private boolean maznacik;
+    private boolean lapacMysi;
 
-    public Macka(String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec, boolean Maznacik, boolean LapacMysi) {
-        super(Meno, Vyska, Vaha, Domace_Zviera, Cicavec);
+    public Macka(boolean maznacik, boolean lapacMysi, String meno, double vyska, double vaha, boolean domace_zviera, boolean cicavec) {
+        super(meno, vyska, vaha, domace_zviera, cicavec);
+
+        this.maznacik = maznacik;
+        this.lapacMysi = lapacMysi;
     }
 
     public boolean isMaznacik() {
-        return Maznacik;
+        return maznacik;
     }
 
-    public void setMaznacik(boolean Maznacik) {
-        this.Maznacik = Maznacik;
+    public void setMaznacik(boolean maznacik) {
+        this.maznacik = maznacik;
     }
 
     public boolean isLapacMysi() {
-        return LapacMysi;
+        return lapacMysi;
     }
 
-    public void setLapacMysi(boolean LapacMysi) {
-        this.LapacMysi = LapacMysi;
+    public void setLapacMysi(boolean lapacMysi) {
+        this.lapacMysi = lapacMysi;
     }
 
     public String getMeno() {
-        return Meno;
+        return meno;
     }
 
-    public void setMeno(String Meno) {
-        this.Meno = Meno;
+    public void setMeno(String meno) {
+        this.meno = meno;
     }
 
     public double getVyska() {
-        return Vyska;
+        return vyska;
     }
 
-    public void setVyska(double Vyska) {
-        this.Vyska = Vyska;
+    public void setVyska(double vyska) {
+        this.vyska = vyska;
     }
 
     public double getVaha() {
-        return Vaha;
+        return vaha;
     }
 
-    public void setVaha(double Vaha) {
-        this.Vaha = Vaha;
+    public void setVaha(double vaha) {
+        this.vaha = vaha;
     }
 
-    public boolean isDomace_Zviera() {
-        return Domace_Zviera;
+    public boolean isDomace_zviera() {
+        return domace_zviera;
     }
 
-    public void setDomace_Zviera(boolean Domace_Zviera) {
-        this.Domace_Zviera = Domace_Zviera;
+    public void setDomace_zviera(boolean domace_zviera) {
+        this.domace_zviera = domace_zviera;
     }
 
     public boolean isCicavec() {
-        return Cicavec;
+        return cicavec;
     }
 
-    public void setCicavec(boolean Cicavec) {
-        this.Cicavec = Cicavec;
+    public void setCicavec(boolean cicavec) {
+        this.cicavec = cicavec;
     }
 
     @Override
     public String toString() {
-        return "Macka{" + "Maznacik=" + Maznacik
-                + ", LapacMysi=" + LapacMysi + '}';
+        return "Macka{"
+                + "maznacik=" + maznacik
+                + ", lapacMysi=" + lapacMysi
+                + "meno=" + meno
+                + ", vyska=" + vyska
+                + ", vaha=" + vaha
+                + ", domace_zviera=" + domace_zviera
+                + ", cicavec=" + cicavec
+                + '}';
     }
 
 }

@@ -11,68 +11,72 @@ package javatina.farma.zviera;
  */
 public class Pes extends Zviera {
 
-    private boolean StrazneZviera;
+    private boolean strazneZviera;
 
-    public Pes(String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec, boolean StrazneZviera) {
-        super(Meno, Vyska, Vaha, Domace_Zviera, Cicavec);
+    public Pes(String meno, double vyska, double vaha, boolean domace_zviera, boolean cicavec, boolean strazneZviera) {
+        super(meno, vyska, vaha, domace_zviera, cicavec);
 
-        this.StrazneZviera = StrazneZviera;
+        this.strazneZviera = strazneZviera;
     }
 
     public boolean isStrazneZviera() {
-        return StrazneZviera;
+        return strazneZviera;
     }
 
-    public void setStrazneZviera(boolean StrazneZviera) {
-        this.StrazneZviera = StrazneZviera;
+    public void setStrazneZviera(boolean strazneZviera) {
+        this.strazneZviera = strazneZviera;
     }
 
     public String getMeno() {
-//        if (StrazneZviera) {
-//            return Meno + "Mortal";
-//        } else {
-        return Meno;
+        return meno;
     }
 
-    public void setMeno(String Meno) {
-        this.Meno = Meno;
+    public void setMeno(String meno) {
+        this.meno = meno;
     }
 
     public double getVyska() {
-        return Vyska;
+        return vyska;
     }
 
-    public void setVyska(double Vyska) {
-        this.Vyska = Vyska;
+    public void setVyska(double vyska) {
+        this.vyska = vyska;
     }
 
     public double getVaha() {
-        return Vaha;
+        return vaha;
     }
 
-    public void setVaha(double Vaha) {
-        this.Vaha = Vaha;
+    public void setVaha(double vaha) {
+        this.vaha = vaha;
     }
 
-    public boolean isDomace_Zviera() {
-        return Domace_Zviera;
+    public boolean isDomace_zviera() {
+        return domace_zviera;
     }
 
-    public void setDomace_Zviera(boolean Domace_Zviera) {
-        this.Domace_Zviera = Domace_Zviera;
+    public void setDomace_zviera(boolean domace_zviera) {
+        this.domace_zviera = domace_zviera;
     }
 
     public boolean isCicavec() {
-        return Cicavec;
+        return cicavec;
     }
 
-    public void setCicavec(boolean Cicavec) {
-        this.Cicavec = Cicavec;
+    public void setCicavec(boolean cicavec) {
+        this.cicavec = cicavec;
     }
 
     @Override
     public String toString() {
-        return "Pes{" + "StrazneZviera=" + StrazneZviera + '}';
+        return "Pes{"
+                + "strazneZviera=" + strazneZviera
+                + "meno=" + meno
+                + ", vyska=" + vyska
+                + ", vaha=" + vaha
+                + ", domace_zviera=" + domace_zviera
+                + ", cicavec=" + cicavec
+                + '}';
     }
 
 }

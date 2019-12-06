@@ -10,71 +10,71 @@ package javatina.farma.zviera;
  * @author Stevlik Marian
  */
 public class Kivi extends Zviera {
-     private boolean Skrecok;
 
-    public Kivi(String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec,boolean Skrecok) {
-        super(Meno, Vyska, Vaha, Domace_Zviera, Cicavec);
+    private boolean skrecok;
+
+    public Kivi(String meno, double vyska, double vaha, boolean domace_zviera, boolean cicavec, boolean skrecok) {
+        super(meno, vyska, vaha, domace_zviera, cicavec);
     }
 
     public boolean isSkrecok() {
-        return Skrecok;
+        return skrecok;
     }
 
-    public void setSkrecok(boolean Skrecok) {
-        this.Skrecok = Skrecok;
+    public void setSkrecok(boolean skrecok) {
+        this.skrecok = skrecok;
     }
 
     public String getMeno() {
-        return Meno;
+        return meno;
     }
 
-    public void setMeno(String Meno) {
-        this.Meno = Meno;
+    public void setMeno(String meno) {
+        this.meno = meno;
     }
-
 
     public double getVyska() {
-        return Vyska;
+        return vyska;
     }
 
-    public void setVyska(double Vyska) {
-        this.Vyska = Vyska;
+    public void setVyska(double vyska) {
+        this.vyska = vyska;
     }
 
     public double getVaha() {
-        return Vaha;
+        return vaha;
     }
 
-    public void setVaha(double Vaha) {
-        this.Vaha = Vaha;
+    public void setVaha(double vaha) {
+        this.vaha = vaha;
     }
 
-    public boolean isDomace_Zviera() {
-        return Domace_Zviera;
+    public boolean isDomace_zviera() {
+        return domace_zviera;
     }
 
-    public void setDomace_Zviera(boolean Domace_Zviera) {
-        this.Domace_Zviera = Domace_Zviera;
+    public void setDomace_zviera(boolean domace_zviera) {
+        this.domace_zviera = domace_zviera;
     }
 
     public boolean isCicavec() {
-        return Cicavec;
+        return cicavec;
     }
 
-    public void setCicavec(boolean Cicavec) {
-        this.Cicavec = Cicavec;
+    public void setCicavec(boolean cicavec) {
+        this.cicavec = cicavec;
     }
 
     @Override
     public String toString() {
-        return "Kivi{" + "Skrecok=" + Skrecok + '}';
+        return "Kivi{"
+                + "skrecok=" + skrecok
+                + "meno=" + meno
+                + ", vyska=" + vyska
+                + ", vaha=" + vaha
+                + ", domace_zviera=" + domace_zviera
+                + ", cicavec=" + cicavec
+                + '}';
     }
 
-    
-    
-
-   
-    }
-    
-    
-
+}
