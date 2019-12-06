@@ -24,11 +24,6 @@ public class Kivi extends Zviera {
         this.Skrecok = Skrecok;
     }
 
-    public Kivi(boolean Skrecok, String Meno, double Vyska, double Vaha, boolean Domace_Zviera, boolean Cicavec) {
-        super(Meno, Vyska, Vaha, Domace_Zviera, Cicavec);
-        this.Skrecok = Skrecok;
-    }
-
     public String getMeno() {
         return Meno;
     }
