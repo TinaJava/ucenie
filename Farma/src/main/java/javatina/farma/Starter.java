@@ -64,9 +64,9 @@ public class Starter {
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
-            if (zviera.isCicavec()) {
-                System.out.println(zviera);
-            } else if (zviera.isDomaceZviera()) {
+//            if (zviera.isCicavec()) {
+//                System.out.println(zviera);
+//            } else if (zviera.isDomaceZviera()) {
                 System.out.println(zviera);
             }
 
@@ -86,4 +86,4 @@ public class Starter {
 
         }
     }
-}
+
