@@ -59,30 +59,31 @@ public class Starter {
         System.out.println("................................................");
         List<Zviera> zvierataList;
         zvierataList = new ArrayList<>();
-        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, true, true));
-        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
-        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, false));
+        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));
+        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
-            if (zviera.isCicavec ()){
-            
-            System.out.println(zviera);
+            if (zviera.isCicavec()) {
+                System.out.println(zviera);
+            } else if (zviera.isDomaceZviera()) {
+                System.out.println(zviera);
             }
-            
+
         }
         {
-        // mapa zvierat
-        System.out.println("................................................");
-        System.out.println("Zvierata ako mapa");
-        System.out.println("................................................");
-        Map<String, Zviera> zvierataMap;
-        zvierataMap = new HashMap<>();
-        zvierataMap.put("0001", new Kivi("skrecok", 5.5, 1.55, true, true, true));
-        // vypis
-        for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
-            System.out.println(zviera.getKey() + " - " + zviera.getValue());
-        }
+            // mapa zvierat
+            System.out.println("................................................");
+            System.out.println("Zvierata ako mapa");
+            System.out.println("................................................");
+            Map<String, Zviera> zvierataMap;
+            zvierataMap = new HashMap<>();
+            zvierataMap.put("0001", new Kivi("skrecok", 5.5, 1.55, true, true, true));
+            // vypis
+            for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
+                System.out.println(zviera.getKey() + " - " + zviera.getValue());
+            }
 
-    }
+        }
     }
 }
