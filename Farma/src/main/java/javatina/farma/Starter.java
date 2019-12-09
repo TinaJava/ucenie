@@ -60,13 +60,17 @@ public class Starter {
         List<Zviera> zvierataList;
         zvierataList = new ArrayList<>();
         zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, true, true));
-        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
+        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, false));
         // vypis
         for (Zviera zviera : zvierataList) {
+            if (zviera.isCicavec ()){
+            
             System.out.println(zviera);
+            }
+            
         }
-
+        {
         // mapa zvierat
         System.out.println("................................................");
         System.out.println("Zvierata ako mapa");
@@ -79,5 +83,6 @@ public class Starter {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
 
+    }
     }
 }
