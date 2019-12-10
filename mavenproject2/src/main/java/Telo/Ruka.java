@@ -12,11 +12,12 @@ package Telo;
 public class Ruka extends Koncatiny {
 
     private int pocetPrstov;
-    private String rukavica;
+    private boolean rukavica;
 
-    public Ruka(String nazov, String farba, String pohyb, int pocetPrstov, String rukavica) {
+    public  Ruka(String nazov, String farba, String pohyb, int pocetPrstov, boolean rukavica) {
         super(nazov, farba, pohyb);
     }
+
 
     public int getPocetPrstov() {
         return pocetPrstov;
@@ -27,11 +28,11 @@ public class Ruka extends Koncatiny {
         return 5;
     }
 
-    public String getRukavica() {
+    public boolean getRukavica() {
         return rukavica;
     }
 
-    public void setRukavica(String rukavica) {
+    public void setRukavica(boolean rukavica) {
         this.rukavica = rukavica;
     }
 

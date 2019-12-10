@@ -64,14 +64,14 @@ public class Starter {
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
-//            if (zviera.isCicavec()) {
-//                System.out.println(zviera);
-//            } else if (zviera.isDomaceZviera()) {
-                System.out.println(zviera);
+            if (zviera.isCicavec()) {
+                int pocetCicavcov = pocetCicavcov + 1;
+            }
+                System.out.println("PocetCicavcov:"+ pocetCicavcov);
             }
 
         }
-        {
+    {
             // mapa zvierat
             System.out.println("................................................");
             System.out.println("Zvierata ako mapa");
