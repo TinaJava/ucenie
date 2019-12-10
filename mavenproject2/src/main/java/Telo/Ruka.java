@@ -14,27 +14,20 @@ public class Ruka extends Koncatiny {
     private int pocetPrstov;
     private boolean rukavica;
 
-    public  Ruka(String nazov, String farba, String pohyb, int pocetPrstov, boolean rukavica) {
+    public Ruka(int pocetPrstov, boolean rukavica, String nazov, String farba, String pohyb) {
         super(nazov, farba, pohyb);
-    }
-
-
-    public int getPocetPrstov() {
-        return pocetPrstov;
-    }
-
-    public int setPocetPrstov(int pocetPrstov) {
         this.pocetPrstov = pocetPrstov;
-        return 5;
+        this.rukavica = rukavica;
     }
 
-    public boolean getRukavica() {
-        return rukavica;
+    public void setPocetPrstov(int pocetPrstov) {
+        this.pocetPrstov = pocetPrstov;
     }
 
     public void setRukavica(boolean rukavica) {
         this.rukavica = rukavica;
     }
+
 
     @Override
     public String toString() {

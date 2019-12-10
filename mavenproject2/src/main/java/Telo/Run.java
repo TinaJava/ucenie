@@ -14,14 +14,18 @@ public class Run {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args,int pocetPrstov) {
-    
+    public static void main(String[] args) {
+        System.out.println("................................................");
+        System.out.println("vypis ruka");
         Ruka ruka;
-        ruka = new Ruka("prava ruka", "telova", "chyt pero", 10, true);
+        ruka = new Ruka(10,false,"nazov","farba","pohyb");
+        ruka.setRukavica(true);
+        ruka.setPocetPrstov(5);
         System.out.println(ruka);
-        
+        System.out.println("................................................");
+        System.out.println("vypis noha");
         Noha noha;
-        noha = new Noha("noha","krvava","ohni koleno",5,false,true,42);
+        noha = new Noha(10,false,true,43,"nazov","farba","pohyb");
         System.out.println(noha);
        
     }

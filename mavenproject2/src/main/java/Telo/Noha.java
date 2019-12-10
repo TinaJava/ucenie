@@ -12,13 +12,21 @@ package Telo;
 public class Noha extends Koncatiny {
     
     private int pocetPrstov;
-    private String sadra;
-    private String topanka;
+    private boolean sadra;
+    private boolean topanka;
     private double velkostNohy;
 
-    public Noha(String nazov, String farba, String pohyb,int pocetPrstov,boolean sadra,boolean topanka,double velkostNohy) {
+    public Noha(int pocetPrstov, boolean sadra, boolean topanka, double velkostNohy, String nazov, String farba, String pohyb) {
         super(nazov, farba, pohyb);
+        this.pocetPrstov = pocetPrstov;
+        this.sadra = sadra;
+        this.topanka = topanka;
+        this.velkostNohy = velkostNohy;
     }
+
+   
+
+   
 
     @Override
     public String toString() {
