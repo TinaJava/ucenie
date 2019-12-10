@@ -23,7 +23,7 @@ public class Starter {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args, String pocetCicavcov) {
 
         // jednotlivci
         System.out.println("................................................");
@@ -65,7 +65,7 @@ public class Starter {
         // vypis
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
-                int pocetCicavcov = pocetCicavcov + 1;
+                int pocetCicavcov =  pocetCicavcov + 1;
             }
                 System.out.println("PocetCicavcov:"+ pocetCicavcov);
             }

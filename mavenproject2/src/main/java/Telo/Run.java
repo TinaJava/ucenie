@@ -14,30 +14,35 @@ public class Run {
     /**
      * @param args the command line arguments
      */
-    public static int main(String[] args) {
-        System.out.println("Telo a Koncatiny");
-
-        System.out.println("PocetPrstov");
+    public static void main(String[] args,int pocetPrstov) {
+    
         Ruka ruka;
-        ruka = new Ruka();
-        ruka ("Prava Ruka"," Telova", " Chyt Pero", 9, true);
-           int  pocetPrstov = 10;
-        if (pocetPrstov > 15) {
-            return pocetPrstov;
-
-        } else if (pocetPrstov < 3) {
+        ruka = new Ruka("prava ruka", "telova", "chyt pero", 10, true);
+        System.out.println(ruka);
+        
+        Noha noha;
+        noha = new Noha("noha","krvava","ohni koleno",5,false,true,42);
+        System.out.println(noha);
        
-        return 5;
-        } else {
-        }
-        return pocetPrstov;
-        System.out.println(ruka.getPocetPrstov());
-     
-
     }
-
-    private static void ruka(String prava_Ruka, String _Telova, String _Chyt_Pero, int i, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 }
+      
+    
+
+    
+
+
+//        int pocetPrstov = 10;
+//
+//        } else if (pocetPrstov < 3) {
+//       
+//        return 5;
+//        } else {
+//        }
+//        return pocetPrstov;
+//        for (Ruka ruka : pocetPrstov) {
+//            if (pocetPrstov > 15) {
+//                return pocetPrstov;
+         
+         
+

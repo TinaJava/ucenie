@@ -16,7 +16,7 @@ public class Noha extends Koncatiny {
     private String topanka;
     private double velkostNohy;
 
-    public Noha(String nazov, String farba, String pohyb,int pocetPrstov,String sadra,String topanka,double velkostNohy) {
+    public Noha(String nazov, String farba, String pohyb,int pocetPrstov,boolean sadra,boolean topanka,double velkostNohy) {
         super(nazov, farba, pohyb);
     }
 
