@@ -63,27 +63,28 @@ public class Starter {
         zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
+
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
-                int pocetCicavcov =  pocetCicavcov + 1;
-            }
-                System.out.println("PocetCicavcov:"+ pocetCicavcov);
-            }
 
-        }
-    {
-            // mapa zvierat
-            System.out.println("................................................");
-            System.out.println("Zvierata ako mapa");
-            System.out.println("................................................");
-            Map<String, Zviera> zvierataMap;
-            zvierataMap = new HashMap<>();
-            zvierataMap.put("0001", new Kivi("skrecok", 5.5, 1.55, true, true, true));
-            // vypis
-            for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
-                System.out.println(zviera.getKey() + " - " + zviera.getValue());
+                pocetCicavcov = pocetCicavcov + 1;
             }
-
+            System.out.println("PocetCicavcov:" + pocetCicavcov);
         }
+
     }
 
+    {
+        // mapa zvierat
+        System.out.println("................................................");
+        System.out.println("Zvierata ako mapa");
+        System.out.println("................................................");
+        Map<String, Zviera> zvierataMap;
+        zvierataMap = new HashMap<>();
+        zvierataMap.put("0001", new Kivi("skrecok", 5.5, 1.55, true, true, true));
+        // vypis
+        for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
+            System.out.println(zviera.getKey() + " - " + zviera.getValue());
+        }
+    }
+}
