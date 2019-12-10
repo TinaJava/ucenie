@@ -43,22 +43,7 @@ public abstract class Koncatiny {
     public void setPohyb(String pohyb) {
         this.pohyb = pohyb;
     }
-
-    @Override
-    public String toString() {
-       
-        return "Koncatiny{" 
-                + "nazov=" + nazov + ", "
-                + "farba=" + farba + ", "
-                + "pohyb=" + pohyb +", "
-                + '}';
-    }
-
     
-    }
-    
-    
-    
-    
+}
     
 

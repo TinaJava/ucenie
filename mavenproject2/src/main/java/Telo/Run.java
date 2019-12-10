@@ -18,23 +18,30 @@ public class Run {
         System.out.println("................................................");
         System.out.println("vypis ruka");
         Ruka ruka;
-        ruka = new Ruka(10,false,"nazov","farba","pohyb");
+        ruka = new Ruka(10, false, "nazov", "farba", "pohyb");
         ruka.setRukavica(true);
         ruka.setPocetPrstov(5);
         System.out.println(ruka);
         System.out.println("................................................");
         System.out.println("vypis noha");
         Noha noha;
-        noha = new Noha(10,false,true,43,"nazov","farba","pohyb");
+        noha = new Noha(10, false, true, 43, "nazov", "farba", "pohyb");
         System.out.println(noha);
-       
+        System.out.println(".................................................");
+        System.out.println("vypis pola koncatin : RUKA a NOHA");
+        Koncatiny[] poleKoncatin;
+        poleKoncatin = new Koncatiny[2];
+        poleKoncatin[0] = new Ruka(10, false, "moja ruka", "opalena", "PODAJ_PERO");
+        poleKoncatin[1] = new Noha(10, true, false, 40.5, "moja noha", "opalena", "VYSTRI_NOHU");
+
+        for (Koncatiny udy : poleKoncatin) {
+            System.out.println(udy);
+
+        }
+
     }
+
 }
-      
-    
-
-    
-
 
 //        int pocetPrstov = 10;
 //
@@ -47,6 +54,4 @@ public class Run {
 //        for (Ruka ruka : pocetPrstov) {
 //            if (pocetPrstov > 15) {
 //                return pocetPrstov;
-         
-         
 

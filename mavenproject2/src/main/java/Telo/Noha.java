@@ -24,6 +24,40 @@ public class Noha extends Koncatiny {
         this.velkostNohy = velkostNohy;
     }
 
+    public int getPocetPrstov() {
+        return pocetPrstov;
+    }
+
+    public void setPocetPrstov(int pocetPrstov) {
+        this.pocetPrstov = pocetPrstov;
+    }
+
+    public boolean isSadra() {
+        return sadra;
+    }
+
+    public void setSadra(boolean sadra) {
+        this.sadra = sadra;
+    }
+
+    public boolean isTopanka() {
+        return topanka;
+    }
+
+    public void setTopanka(boolean topanka) {
+        this.topanka = topanka;
+    }
+
+    public double getVelkostNohy() {
+        return velkostNohy;
+    }
+
+    public void setVelkostNohy(double velkostNohy) {
+        this.velkostNohy = velkostNohy;
+    }
+
+   
+
    
 
    

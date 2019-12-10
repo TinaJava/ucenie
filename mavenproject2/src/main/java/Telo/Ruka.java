@@ -20,14 +20,23 @@ public class Ruka extends Koncatiny {
         this.rukavica = rukavica;
     }
 
-    public void setPocetPrstov(int pocetPrstov) {
+   
+    public int getPocetPrstov() {
+        return pocetPrstov;
+    }
+
+    public int setPocetPrstov(int pocetPrstov) {
         this.pocetPrstov = pocetPrstov;
+        return 5;
+    }
+
+    public boolean getRukavica() {
+        return rukavica;
     }
 
     public void setRukavica(boolean rukavica) {
         this.rukavica = rukavica;
     }
-
 
     @Override
     public String toString() {
