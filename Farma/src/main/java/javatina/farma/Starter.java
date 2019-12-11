@@ -23,7 +23,7 @@ public class Starter {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args, String pocetCicavcov) {
+    public static void main(String[] args) {
 
         // jednotlivci
         System.out.println("................................................");
@@ -52,6 +52,7 @@ public class Starter {
         for (Zviera zviera : zvierataPole) {
             System.out.println(zviera);
         }
+
         // list zvierat
         System.out.println("................................................");
         System.out.println("Zvierata ako list");
@@ -62,20 +63,18 @@ public class Starter {
         zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
-
+        for (Zviera zviera : zvierataList) {
+            System.out.println(zviera);
+        }
+        // pocet cicavcov
+        int pocetCicavcov = 0;  // vytvorim premennu pocetCicavcov a priradim jej rovno 0
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
-
-                pocetCicavcov = pocetCicavcov + 1;
+                pocetCicavcov = pocetCicavcov + 1;  // ak je zviera cicavec, tak priratam 1
             }
-            
-            System.out.println("PocetCicavcov:" + pocetCicavcov);
-            
         }
+        System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypoisem pocet cicavcov
 
-    }
-
-    {
         // mapa zvierat
         System.out.println("................................................");
         System.out.println("Zvierata ako mapa");
@@ -87,5 +86,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-      }
+
     }
+}
