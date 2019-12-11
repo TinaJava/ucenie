@@ -5,6 +5,11 @@
  */
 package Telo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  *
  * @author vlada
@@ -38,9 +43,28 @@ public class Run {
             System.out.println(udy);
 
         }
+        System.out.println(".................................................");
+        System.out.println("vypis Listu koncatin - Ruka + Noha ");
+        List<Koncatiny> ListKoncatin;
+        ListKoncatin = new ArrayList<>();
+        ListKoncatin.add(new Noha(10, true, false, 40.5, "moja noha", "opalena", "VYSTRI_NOHU"));
+        ListKoncatin.add(new Ruka(10, false, "moja ruka", "opalena", "PODAJ_PERO"));
+
+        for (Koncatiny udy1 : ListKoncatin) {
+            System.out.println(udy1);
+        }
+        System.out.println(".................................................");
+        System.out.println("Vzpis Mapy a  casti tela : ruky a nohy");
+        Map<String, Koncatiny> castiTela;
+        castiTela = new HashMap<>();
+        castiTela.put("1", new Noha(5, false, true, 41, "Noha Ciganky", "Hnedej farby", "Vystri nohu"));
+        castiTela.put("2", new Ruka(5, false, "ruka dietata", "ruka zranena", "ohni ruku"));
+
+        for (Map.Entry<String, Koncatiny> udy3 : castiTela.entrySet()) {
+            System.out.println(udy3.getKey() + " - " + udy3.getValue());
+        }
 
     }
-
 }
 
 //        int pocetPrstov = 10;

@@ -52,7 +52,6 @@ public class Starter {
         for (Zviera zviera : zvierataPole) {
             System.out.println(zviera);
         }
-
         // list zvierat
         System.out.println("................................................");
         System.out.println("Zvierata ako list");
@@ -69,7 +68,9 @@ public class Starter {
 
                 pocetCicavcov = pocetCicavcov + 1;
             }
+            
             System.out.println("PocetCicavcov:" + pocetCicavcov);
+            
         }
 
     }
@@ -86,5 +87,5 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
+      }
     }
-}
