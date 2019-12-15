@@ -66,6 +66,7 @@ public class Starter {
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
         }
+        
         // pocet cicavcov
         int pocetCicavcov = 0;  // vytvorim premennu pocetCicavcov a priradim jej rovno 0
         for (Zviera zviera : zvierataList) {
@@ -74,6 +75,7 @@ public class Starter {
             }
         }
         System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypoisem pocet cicavcov
+        
         // list cicavcov
         List<Zviera> cicavceList;
         cicavceList = new ArrayList<>();
@@ -99,41 +101,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-<<<<<<< HEAD
-        
-=======
-        //List cicavcov
-//        System.out.println("................................................");
-//        System.out.println("Cicavec ako list");
-//        System.out.println("................................................");
-//
-//        List<Zviera> cicavce;
-//        cicavce = new ArrayList<>();
-//
-//        cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
-//        cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-//        cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-//
-//        for (Zviera dunk : cicavce) {
-//            System.out.println(dunk);
-//        }
-//            String vypiscicavce = "Kivi,Macka,Pes";
-//            System.out.println(vypiscicavce);
 
-        List<Zviera> cicavce1;
-        cicavce1 = new ArrayList<>();
-        cicavce1.add(new Kivi("skrecok", 5.5, 1.5, false, false, false));
-        cicavce1.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        cicavce1.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
-
-        cicavce1 = new Zviera();
-        for (Zviera cuc : cicavce1) {
-            boolean Zviera = true;
-            if (Zviera.isCicavec()){
-            System.out.println(Zviera);
-
-        }
->>>>>>> master
     }
-}
 }
