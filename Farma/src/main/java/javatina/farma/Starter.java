@@ -98,11 +98,11 @@ public class Starter {
         cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
         cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-        System.out.println(" Macka, Pes, kiwi ");
 
         for (Zviera dunk : cicavce) {
             System.out.println(dunk);
         }
+            String vypiscicavce = "Kivi,Macka,Pes";
+            System.out.println(vypiscicavce);
     }
-
 }
