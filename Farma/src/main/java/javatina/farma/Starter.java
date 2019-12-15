@@ -107,13 +107,17 @@ public class Starter {
 
         List<Zviera> cicavce1;
         cicavce1 = new ArrayList<>();
-        cicavce1.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
+        cicavce1.add(new Kivi("skrecok", 5.5, 1.5, false, false, false));
         cicavce1.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         cicavce1.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
 
+        cicavce1 = new Zviera();
         for (Zviera cuc : cicavce1) {
-            System.out.println(cicavce1.size());
+            boolean Zviera = true;
+            if (Zviera.isCicavec()){
+            System.out.println(Zviera);
 
         }
     }
+}
 }

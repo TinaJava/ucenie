@@ -17,10 +17,10 @@ public abstract class Zviera {
     protected boolean domaceZviera;
     protected boolean cicavec;
     
-    public String vypiscicavce(){
-        String vypiscicavce = "Kivi,Macka,Pes";
-        return vypiscicavce;
-    }
+//    public String vypiscicavce(){
+//        String vypiscicavce = "Kivi,Macka,Pes";
+//        return vypiscicavce;
+    
     
     public Zviera(String meno, double vyska, double vaha, boolean domaceZviera, boolean cicavec) {
         this.meno = meno;
