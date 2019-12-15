@@ -59,15 +59,17 @@ public class Starter {
         System.out.println("................................................");
         List<Zviera> zvierataList;
         zvierataList = new ArrayList<>();
-        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));
+        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, true, false));
         zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
         }
-        
+
         // pocet cicavcov
+        System.out.println(".............................................");
+
         int pocetCicavcov = 0;  // vytvorim premennu pocetCicavcov a priradim jej rovno 0
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
@@ -75,19 +77,24 @@ public class Starter {
             }
         }
         System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypoisem pocet cicavcov
-        
+
         // list cicavcov
         List<Zviera> cicavceList;
         cicavceList = new ArrayList<>();
         // naplnenie cicavcov
         for (Zviera zviera : zvierataList) {
-            if (zviera.isCicavec()){
+            if (zviera.isCicavec()) {
                 System.out.println(zviera);
             }
             // sem mi napis kod, kt. zo zvierataList vyberie len cicavce a naplni ich do cicavceList
             // inspiruj sa cyklom na zistenie poctu cicavcov
         }
+        System.out.println(".................................................");
         // vypis cicavcov
+        cicavceList.add(new Kivi("skrecok", 5.5, 1.55, true, true, false));
+        cicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        cicavceList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        // vypis
         System.out.println("Len cicavce:");  // za cyklomn vypoisem pocet cicavcov
         for (Zviera cicavec : cicavceList) {
             System.out.println(cicavec);
