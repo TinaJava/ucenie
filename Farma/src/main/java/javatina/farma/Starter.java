@@ -62,6 +62,7 @@ public class Starter {
         zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));
         zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+
         // vypis
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
@@ -86,6 +87,22 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
+        //List cicavcov
+        System.out.println("................................................");
+        System.out.println("Cicavec ako list");
+        System.out.println("................................................");
 
+        List<Zviera> cicavce;
+        cicavce = new ArrayList<>();
+
+        cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
+        cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        System.out.println(" Macka, Pes, kiwi ");
+
+        for (Zviera dunk : cicavce) {
+            System.out.println(dunk);
+        }
     }
+
 }
