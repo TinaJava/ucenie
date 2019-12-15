@@ -81,6 +81,9 @@ public class Starter {
         cicavceList = new ArrayList<>();
         // naplnenie cicavcov
         for (Zviera zviera : zvierataList) {
+            if (zviera.isCicavec()){
+                System.out.println(zviera);
+            }
             // sem mi napis kod, kt. zo zvierataList vyberie len cicavce a naplni ich do cicavceList
             // inspiruj sa cyklom na zistenie poctu cicavcov
         }
