@@ -62,7 +62,6 @@ public class Starter {
         zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));
         zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
         zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-
         // vypis
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
@@ -75,6 +74,19 @@ public class Starter {
             }
         }
         System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypoisem pocet cicavcov
+        // list cicavcov
+        List<Zviera> cicavceList;
+        cicavceList = new ArrayList<>();
+        // naplnenie cicavcov
+        for (Zviera zviera : zvierataList) {
+            // sem mi napis kod, kt. zo zvierataList vyberie len cicavce a naplni ich do cicavceList
+            // inspiruj sa cyklom na zistenie poctu cicavcov
+        }
+        // vypis cicavcov
+        System.out.println("Len cicavce:");  // za cyklomn vypoisem pocet cicavcov
+        for (Zviera cicavec : cicavceList) {
+            System.out.println(cicavec);
+        }
 
         // mapa zvierat
         System.out.println("................................................");
@@ -87,33 +99,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-        //List cicavcov
-//        System.out.println("................................................");
-//        System.out.println("Cicavec ako list");
-//        System.out.println("................................................");
-//
-//        List<Zviera> cicavce;
-//        cicavce = new ArrayList<>();
-//
-//        cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
-//        cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-//        cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-//
-//        for (Zviera dunk : cicavce) {
-//            System.out.println(dunk);
-//        }
-//            String vypiscicavce = "Kivi,Macka,Pes";
-//            System.out.println(vypiscicavce);
-
-        List<Zviera> cicavce1;
-        cicavce1 = new ArrayList<>();
-        cicavce1.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
-        cicavce1.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        cicavce1.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
-
-        for (Zviera cuc : cicavce1) {
-            System.out.println(cicavce1.size());
-
-        }
+        
     }
 }
