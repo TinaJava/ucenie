@@ -88,21 +88,32 @@ public class Starter {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
         //List cicavcov
-        System.out.println("................................................");
-        System.out.println("Cicavec ako list");
-        System.out.println("................................................");
+//        System.out.println("................................................");
+//        System.out.println("Cicavec ako list");
+//        System.out.println("................................................");
+//
+//        List<Zviera> cicavce;
+//        cicavce = new ArrayList<>();
+//
+//        cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
+//        cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+//        cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+//
+//        for (Zviera dunk : cicavce) {
+//            System.out.println(dunk);
+//        }
+//            String vypiscicavce = "Kivi,Macka,Pes";
+//            System.out.println(vypiscicavce);
 
-        List<Zviera> cicavce;
-        cicavce = new ArrayList<>();
+        List<Zviera> cicavce1;
+        cicavce1 = new ArrayList<>();
+        cicavce1.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
+        cicavce1.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        cicavce1.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
 
-        cicavce.add(new Kivi("skrecok", 5.5, 1.5, true, true, true));
-        cicavce.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        cicavce.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        for (Zviera cuc : cicavce1) {
+            System.out.println(cicavce1.size());
 
-        for (Zviera dunk : cicavce) {
-            System.out.println(dunk);
         }
-            String vypiscicavce = "Kivi,Macka,Pes";
-            System.out.println(vypiscicavce);
     }
 }
