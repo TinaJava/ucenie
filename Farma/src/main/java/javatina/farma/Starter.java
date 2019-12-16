@@ -59,9 +59,9 @@ public class Starter {
         System.out.println("................................................");
         List<Zviera> zvierataList;
         zvierataList = new ArrayList<>();
-        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, false, false));  // naschval tvrdime, ze Kivi-Skrecok nie je cicavec
-        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
-        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));  // naschval tvrdime, ze Kivi-Skrecok nie je cicavec
+        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
+        zvierataList.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
@@ -97,20 +97,24 @@ public class Starter {
         }
 
         //vypis necicavcov
+        System.out.println(".................................................");
         System.out.println("necicavce");
         List<Zviera> necicavceList;
         necicavceList = new ArrayList<>();
         
+        int pocetNecicavcov = 0;
         for (Zviera necicavec : necicavceList) {
             if (necicavec.isCicavec() == false) {
-                System.out.println(necicavec);
-                
+                pocetNecicavcov = pocetNecicavcov + 1;
                 Zviera zviera = necicavec;
                 necicavceList.add(zviera);
+                
                 necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, false, false, false));
                 necicavceList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-                necicavceList.add(new Kivi("kiva", 5.2, 0.55, true, true, true));
+                necicavceList.add(new Kivi("kiva", 5.2, 0.55, false, true, true));
                 System.out.println(necicavceList);
+                System.out.println(necicavec);
+
             }
         }
 
