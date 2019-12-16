@@ -84,7 +84,8 @@ public class Starter {
         // naplnenie cicavcov
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
-                System.out.println(zviera.isCicavec());
+                cicavceList.add(pocetCicavcov, zviera);
+                
                 // tu uz vies, ze zviera je cicavec,
                 // takze tu uz daj len jeden prikaz, kt. bude plnit zoznam cicavcov
             }
