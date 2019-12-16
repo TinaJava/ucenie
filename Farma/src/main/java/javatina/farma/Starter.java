@@ -99,24 +99,29 @@ public class Starter {
         //vypis necicavcov
         System.out.println(".................................................");
         System.out.println("necicavce");
+
         List<Zviera> necicavceList;
         necicavceList = new ArrayList<>();
-        
+
         int pocetNecicavcov = 0;
+                        pocetNecicavcov = pocetNecicavcov + 1;
+
         for (Zviera necicavec : necicavceList) {
             if (necicavec.isCicavec() == false) {
-                pocetNecicavcov = pocetNecicavcov + 1;
                 Zviera zviera = necicavec;
                 necicavceList.add(zviera);
-                
-                necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, false, false, false));
-                necicavceList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
-                necicavceList.add(new Kivi("kiva", 5.2, 0.55, false, true, true));
-                System.out.println(necicavceList);
-                System.out.println(necicavec);
-
             }
         }
+                necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
+                necicavceList.add(new Macka(true,false, "ciciak", 35.2, 6.8, false, true));
+                necicavceList.add(new Kivi("kiva", 5.2, 0.55, false, false, false));
+                System.out.println(necicavceList);
+        boolean necicavec = false;
+                System.out.println(necicavec);
+                System.out.println("pocet necicavcov "+ pocetNecicavcov);
+                System.out.println(necicavceList);
+            
+        
 
         // mapa zvierat
         System.out.println("................................................");
@@ -129,6 +134,5 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-
     }
 }
