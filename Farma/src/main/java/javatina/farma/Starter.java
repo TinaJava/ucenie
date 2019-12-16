@@ -59,9 +59,9 @@ public class Starter {
         System.out.println("................................................");
         List<Zviera> zvierataList;
         zvierataList = new ArrayList<>();
-        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, false, false, false));  // naschval tvrdime, ze Kivi-Skrecok nie je cicavec
-        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
-        zvierataList.add(new Macka(true, false, "ciciak", 35.2, 6.8, true, true));
+        zvierataList.add(new Kivi("skrecok", 5.5, 1.55, true, false, false));  // naschval tvrdime, ze Kivi-Skrecok nie je cicavec
+        zvierataList.add(new Pes("velky strazny pes", 110.2, 105.5, true, true, true));
+        zvierataList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
         // vypis
         for (Zviera zviera : zvierataList) {
             System.out.println(zviera);
@@ -75,7 +75,7 @@ public class Starter {
             }
         }
         System.out.println(".............................................");
-        System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypoisem pocet cicavcov
+        System.out.println("Pocet cicavcov: " + pocetCicavcov);  // za cyklomn vypisem pocet cicavcov
         System.out.println(".............................................");
 
         // list cicavcov
@@ -85,43 +85,54 @@ public class Starter {
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
                 cicavceList.add(zviera);
-                // tu uz vies, ze zviera je cicavec,
-                // takze tu uz daj len jeden prikaz, kt. bude plnit zoznam cicavcov
             }
         }
         // vypis cicavcov
         System.out.println(".................................................");
         System.out.println("Vypis cicavcov:");
+        System.out.println(".................................................");
         for (Zviera cicavec : cicavceList) {
             System.out.println(cicavec);
         }
 
-        //vypis necicavcov
-        System.out.println(".................................................");
-        System.out.println("necicavce");
-
+        // list necicavcov
         List<Zviera> necicavceList;
         necicavceList = new ArrayList<>();
-
-        int pocetNecicavcov = 0;
-                        pocetNecicavcov = pocetNecicavcov + 1;
-
-        for (Zviera necicavec : necicavceList) {
-            if (necicavec.isCicavec() == false) {
-                Zviera zviera = necicavec;
-                necicavceList.add(zviera);
-            }
-        }
-                necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
-                necicavceList.add(new Macka(true,false, "ciciak", 35.2, 6.8, false, true));
-                necicavceList.add(new Kivi("kiva", 5.2, 0.55, false, false, false));
-                System.out.println(necicavceList);
-        boolean necicavec = false;
-                System.out.println(necicavec);
-                System.out.println("pocet necicavcov "+ pocetNecicavcov);
-                System.out.println(necicavceList);
-            
+        // naplnenie necicavcov
+        // !!! tu urob naplnenie listu necicavceList z listu zvierataList
+        // vypis necicavcov
+        System.out.println(".................................................");
+        System.out.println("Vypis necicavcov:");
+        System.out.println(".................................................");
+        // !!! tu urob vypis naplneneho listu necicavceList
         
+
+        // toto je zle        
+//        //vypis necicavcov
+//        System.out.println(".................................................");
+//        System.out.println("necicavce");
+//
+//
+//        List<Zviera> necicavceList;
+//        necicavceList = new ArrayList<>();
+//
+//        int pocetNecicavcov = 0;
+//                        pocetNecicavcov = pocetNecicavcov + 1;
+//
+//        for (Zviera necicavec : necicavceList) {
+//            if (necicavec.isCicavec() == false) {
+//                Zviera zviera = necicavec;
+//                necicavceList.add(zviera);
+//            }
+//        }
+//                necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, true, false, true));
+//                necicavceList.add(new Macka(true,false, "ciciak", 35.2, 6.8, false, true));
+//                necicavceList.add(new Kivi("kiva", 5.2, 0.55, false, false, false));
+//                System.out.println(necicavceList);
+//        boolean necicavec = false;
+//                System.out.println(necicavec);
+//                System.out.println("pocet necicavcov "+ pocetNecicavcov);
+//                System.out.println(necicavceList);
 
         // mapa zvierat
         System.out.println("................................................");
