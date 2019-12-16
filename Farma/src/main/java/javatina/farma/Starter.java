@@ -96,6 +96,24 @@ public class Starter {
             System.out.println(cicavec);
         }
 
+        //vypis necicavcov
+        System.out.println("necicavce");
+        List<Zviera> necicavceList;
+        necicavceList = new ArrayList<>();
+        
+        for (Zviera necicavec : necicavceList) {
+            if (necicavec.isCicavec() == false) {
+                System.out.println(necicavec);
+                
+                Zviera zviera = necicavec;
+                necicavceList.add(zviera);
+                necicavceList.add(new Pes("velky strazny pes", 110.2, 105.5, false, false, false));
+                necicavceList.add(new Macka(true, true, "ciciak", 35.2, 6.8, true, true));
+                necicavceList.add(new Kivi("kiva", 5.2, 0.55, true, true, true));
+                System.out.println(necicavceList);
+            }
+        }
+
         // mapa zvierat
         System.out.println("................................................");
         System.out.println("Zvierata ako mapa");
@@ -107,6 +125,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-        
+
     }
 }
