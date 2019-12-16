@@ -84,8 +84,7 @@ public class Starter {
         // naplnenie cicavcov
         for (Zviera zviera : zvierataList) {
             if (zviera.isCicavec()) {
-                cicavceList.add(pocetCicavcov, zviera);
-                
+                cicavceList.add(zviera);
                 // tu uz vies, ze zviera je cicavec,
                 // takze tu uz daj len jeden prikaz, kt. bude plnit zoznam cicavcov
             }
@@ -108,6 +107,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + " - " + zviera.getValue());
         }
-
+        
     }
 }
