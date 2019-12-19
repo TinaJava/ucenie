@@ -12,7 +12,9 @@ import Zvierata.Prasa;
 import Zvierata.Sliepka;
 import Zvierata.Zviera;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -66,7 +68,7 @@ public class Starter {
 //
 //                System.out.println(Zviera1.size());
 //
-//            }
+//            } 
 //
 //        }
         // vytvorenie pola zvierat a jeho naplnenie
@@ -107,7 +109,24 @@ public class Starter {
         for (Zviera vypis : zvierata2) {
             System.out.println(vypis);
         }
+        //mapa zvierat husí
+        System.out.println(".................................................");
+        System.out.println("vypis mapy zvierat");
+        System.out.println(".................................................");
+        Map<String, Zviera> zvierataMap;
+        zvierataMap = new HashMap<>();
+        zvierataMap.put("01", new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
+        //vypis mapy
+        for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
+            System.out.println(zviera.getKey() + "-" + zviera.getValue());
+
+            Map<String, Zviera> zvierataMap1;
+            zvierataMap1 = new HashMap<>();
+            zvierataMap1.put("02", new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20, true));
+            for (Map.Entry<String, Zviera> zviera1 : zvierataMap1.entrySet()) {
+                System.out.println(zviera1.getKey() + "-" + zviera1.getValue());
+
+            }
+        }
     }
-    
-    
 }
