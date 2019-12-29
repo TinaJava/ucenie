@@ -9,11 +9,11 @@ package Produkcia;
  *
  * @author vlada
  */
-public abstract class Farma {
-    protected String Zoznam_zvierat;
+public abstract class Farma {  // Preco je ta trieda abstract?
+    protected String Zoznam_zvierat;   // Preco to mas ako String? Ved to ma byt zoznam tj List, Pole, Mapa
 
     public Farma(String Zoznam_zvierat) {
-        this.Zoznam_zvierat = Zoznam_zvierat;
+        this.Zoznam_zvierat = Zoznam_zvierat;  // Preco si chces zoznam zvierat posielat z vonku? Ved trieda Farma bude ten zoznam zvierat udrzovat a riadit, nie nikto z vonku
     }
 
    

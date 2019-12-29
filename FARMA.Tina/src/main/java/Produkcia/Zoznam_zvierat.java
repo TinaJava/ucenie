@@ -9,6 +9,6 @@ package Produkcia;
  *
  * @author vlada
  */
-class Zoznam_zvierat {
+class Zoznam_zvierat {  // Naco je zalozena tato trieda? Aky ma mat ucel? Podla mna je zbytocna
     
 }

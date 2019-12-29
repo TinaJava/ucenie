@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* 
+ * To change this license header, choose License Headers in Project Properties. 
+ * To change this template file, choose Tools | Templates 
+ * and open the template in the editor. 
  */
 package Produkcia;
 
@@ -28,7 +28,7 @@ public class Starter {
     public static void main(String[] args) {
 
         Zviera koza;
-        koza = new Koza(true, true, false, "koza horska", 180.5, 102, true, true);//naplnenie konstruktora pre Koza
+        koza = new Koza(true, true, false, "koza horska", 180.5, 102, true, true);//naplnenie konstruktora pre Koza 
         System.out.println(koza);
 
         Zviera krava;
@@ -43,35 +43,35 @@ public class Starter {
         prasa = new Prasa("Mangalica", 220.55, 104, true, true, true, true, true);
         System.out.println(prasa);
 
-//        String[] zvierata;  // preco si vyrabala pole stringov String[] a nie pole zvierat Zviera[]?
-//        zvierata = new String[4];
-//        zvierata[0] = "Koza";
-//        zvierata[1] = "Krava";
-//        zvierata[2] = "Prasa";
-//        zvierata[3] = "Hus";
-//
-//        for (int i = 0; i < zvierata.length; i++) {
-//            System.out.println(i + " ." + zvierata[i]);
-//
-//            String[] cicavci;
-//            cicavci = new String[3];
-//            cicavci[0] = "Krava";
-//            cicavci[1] = "Koza";
-//            cicavci[2] = "Prasa";
-//
-//            for (String savci : cicavci) {
-//                System.out.println(savci);
-//
-//                List<String> Zviera1;
-//                Zviera1 = new ArrayList<>();
-//                Zviera1.addAll(Zviera1);
-//
-//                System.out.println(Zviera1.size());
-//
-//            } 
-//
-//        }
-        // vytvorenie pola zvierat a jeho naplnenie
+//        String[] zvierata;  // preco si vyrabala pole stringov String[] a nie pole zvierat Zviera[]? 
+//        zvierata = new String[4]; 
+//        zvierata[0] = "Koza"; 
+//        zvierata[1] = "Krava"; 
+//        zvierata[2] = "Prasa"; 
+//        zvierata[3] = "Hus"; 
+// 
+//        for (int i = 0; i < zvierata.length; i++) { 
+//            System.out.println(i + " ." + zvierata[i]); 
+// 
+//            String[] cicavci; 
+//            cicavci = new String[3]; 
+//            cicavci[0] = "Krava"; 
+//            cicavci[1] = "Koza"; 
+//            cicavci[2] = "Prasa"; 
+// 
+//            for (String savci : cicavci) { 
+//                System.out.println(savci); 
+// 
+//                List<String> Zviera1; 
+//                Zviera1 = new ArrayList<>(); 
+//                Zviera1.addAll(Zviera1); 
+// 
+//                System.out.println(Zviera1.size()); 
+// 
+//            }  
+// 
+//        } 
+        // vytvorenie pola zvierat a jeho naplnenie 
         Zviera[] zvierata;
         zvierata = new Zviera[5];
         zvierata[0] = new Koza(true, true, false, "Koza", 180.5, 102, true, true);
@@ -80,19 +80,19 @@ public class Starter {
         zvierata[3] = new Hus("Hus", 12.5, 32, true, false, true, true);
         zvierata[4] = new Sliepka(true, true, true, "Sliepka", 3.5, 20, true);
 
-        // vypis vsetkych zvierat
+        // vypis vsetkych zvierat 
         System.out.println("-------------------------------------------------------");
         System.out.println("Vsetky zvierata:");
         for (Zviera zviera : zvierata) {
             System.out.println(zviera);
         }
 
-        // vypis len cicavcov
+        // vypis len cicavcov 
         System.out.println("-------------------------------------------------------");
         System.out.println("Len cicavce:");
         for (Zviera zviera : zvierata) {
-            if (zviera.isCicavec()) {  // podmienka na to, ci je zviera cicavec
-                System.out.println(zviera);  // vypis zvierata, kt. je cicavec (tj splnilo if)
+            if (zviera.isCicavec()) {  // podmienka na to, ci je zviera cicavec 
+                System.out.println(zviera);  // vypis zvierata, kt. je cicavec (tj splnilo if) 
             }
         }
 
@@ -109,7 +109,7 @@ public class Starter {
         for (Zviera vypis : zvierata2) {
             System.out.println(vypis);
         }
-        //mapa zvierat husí
+        //mapa zvierat husí 
         System.out.println(".................................................");
         System.out.println("vypis mapy zvierat");
         System.out.println(".................................................");
@@ -121,13 +121,10 @@ public class Starter {
         zvierataMap.put("03", new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
         zvierataMap.put("04", new Krava("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
         zvierataMap.put("05", new Koza(true, true, false, "Koza", 180.5, 102, true, true));
-        //vypis mapy
+        //vypis mapy 
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + "-" + zviera.getValue());
 
         }
     }
-
 }
-
-   
