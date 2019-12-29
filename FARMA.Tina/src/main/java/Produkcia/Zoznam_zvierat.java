@@ -12,3 +12,5 @@ package Produkcia;
 class Zoznam_zvierat {  // Naco je zalozena tato trieda? Aky ma mat ucel? Podla mna je zbytocna
     
 }
+
+tuto triedu mi automaticky vytvoril system sam ked som klikla na ziarovku lebo to chchelo po mne crealtivnu triedu v package produkcia . samo ju vyrobilo
