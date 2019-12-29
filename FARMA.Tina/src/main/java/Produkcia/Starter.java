@@ -113,23 +113,32 @@ public class Starter {
         System.out.println(".................................................");
         System.out.println("vypis mapy zvierat");
         System.out.println(".................................................");
-        
-        
+
         Map<String, Zviera> zvierataMap;
         zvierataMap = new HashMap<>();
-        zvierataMap.put("01",new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
-        zvierataMap.put("02",new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20,true));
-        zvierataMap.put("03",new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
-        zvierataMap.put("04",new Krava("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
-        zvierataMap.put("05",new Koza(true, true, false, "Koza", 180.5, 102, true, true));
+        zvierataMap.put("01", new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
+        zvierataMap.put("02", new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20, true));
+        zvierataMap.put("03", new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
+        zvierataMap.put("04", new Krava("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
+        zvierataMap.put("05", new Koza(true, true, false, "Koza", 180.5, 102, true, true));
         //vypis mapy
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + "-" + zviera.getValue());
 
-           
+            //vypis zoznamu zvierat z triedy Farma.java
+            System.out.println("Zoznam zvierat");
+
+            Farma Zoznam_zvierat;
+            List<Farma> zoznam;
+            zoznam = new ArrayList<>();
+            zoznam.add(Zoznam_zvierat("krava, kon, liska, pes, macka, jahna"));
+
+            for (Farma nazov : zoznam) {
+                System.out.println(nazov);
             }
         }
     }
 
+}
 
-
+   
