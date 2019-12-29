@@ -125,17 +125,6 @@ public class Starter {
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + "-" + zviera.getValue());
 
-            //vypis zoznamu zvierat z triedy Farma.java
-            System.out.println("Zoznam zvierat");
-
-            Farma Zoznam_zvierat;
-            List<Farma> zoznam;
-            zoznam = new ArrayList<>();
-            zoznam.add(Zoznam_zvierat("krava, kon, liska, pes, macka, jahna"));
-
-            for (Farma nazov : zoznam) {
-                System.out.println(nazov);
-            }
         }
     }
 
