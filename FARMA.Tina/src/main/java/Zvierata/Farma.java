@@ -5,10 +5,20 @@
  */
 package Zvierata;
 
+import java.util.Iterator;
+import java.util.List;
+
 /**
  *
  * @author vlada
  */
 public class Farma {
-    
+
+    private Zviera zoznamZvierat;
+    public List<Zviera> zvierata;
+
+    public List<Zviera> getZvierata() {
+        return zvierata;
+       
+    }
 }
