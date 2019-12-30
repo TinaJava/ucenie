@@ -14,11 +14,12 @@ import java.util.List;
  */
 public class Farma {
 
-    private Zviera zoznamZvierat;
-    public List<Zviera> zvierata;
+    private Zviera krava;
+    private Zviera sliepka;
+    private Zviera koza;
+    private Zviera prasa;
+    
+    private List<Zviera> zvierata;
 
-    public List<Zviera> getZvierata() {
-        return zvierata;
-       
     }
-}
+
