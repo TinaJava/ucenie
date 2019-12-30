@@ -33,7 +33,7 @@ public class Rodina {
         return matka;
     }
 
-    public void setMatka(ClenRodiny matka) {
+     public void setMatka(ClenRodiny matka) {
         this.matka = matka;
     }
 
