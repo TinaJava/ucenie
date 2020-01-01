@@ -124,7 +124,14 @@ public class Starter {
         //vypis mapy 
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + "-" + zviera.getValue());
-
+            System.out.println("...............................................");
+            int pocetUzitkove = 0;
+            for (Zviera vypis : zvierata) {
+                if (vypis.isUzitkove()) {
+                    pocetUzitkove = pocetUzitkove + 1;
+                    System.out.println(vypis);
+                }
+            }
         }
     }
 }

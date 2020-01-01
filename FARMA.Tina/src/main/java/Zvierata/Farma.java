@@ -16,9 +16,11 @@ public class Farma {
 
     private List<Zviera> zvierata;
 
-    public Farma(List<Zviera> zvierata) {
+    public Farma(List<Zviera> zvierata, int pocetUzitkove) {
         this.zvierata = zvierata;
+       
+            
     }
+}
 
-    }
 
