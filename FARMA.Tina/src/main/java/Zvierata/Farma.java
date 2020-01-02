@@ -16,7 +16,7 @@ public class Farma {
     private List<Zviera> zvierata;
 
     public Farma() {  // konstruktor som chcel bez parametrov
-        this.zvierata = // tuto nieco bude zacinajuce na new ...;
+        this.zvierata = new zvierata;// tuto nieco bude zacinajuce na new ...;
     }
     
     /**
@@ -24,6 +24,9 @@ public class Farma {
      */
     public void vypisZvierat() {
         // tu sprav vypis zvierat z listu "zvierata" (pomocou for a sout)
+        for (Zviera vypis : zvierata){
+            System.out.println(vypis);
+        }
     }
     
     /**
