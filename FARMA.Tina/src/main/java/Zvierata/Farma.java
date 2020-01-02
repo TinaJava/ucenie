@@ -5,6 +5,7 @@
  */
 package Zvierata;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,7 +17,7 @@ public class Farma {
     private List<Zviera> zvierata;
 
     public Farma() {  // konstruktor som chcel bez parametrov
-        this.zvierata = new zvierata;// tuto nieco bude zacinajuce na new ...;
+        this.zvierata = new ArrayList<>();// tuto nieco bude zacinajuce na new ...;
     }
     
     /**
@@ -34,7 +35,9 @@ public class Farma {
      * @param zviera - zviera, kt. sa ma pridat
      */
     public void pridajZviera(Zviera zviera) {
-        // tu urob pridanie zviarata zo vstupneho parametra do listu "zvierata"
+      
+       zvierata.add(zviera); // tu urob pridanie zviarata zo vstupneho parametra do listu "zvierata"
     }
+    
 
 }
