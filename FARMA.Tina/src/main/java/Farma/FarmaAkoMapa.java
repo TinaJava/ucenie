@@ -19,7 +19,7 @@ import java.util.Map.Entry;
  */
 public class FarmaAkoMapa {
 
-    Map<String, Zviera> zvierata2;
+    Map<String, Zviera> zvierata2;  // preco si to nazvala "zvierata2", preco nie opat "zvierata"?  preco si nedefinovala, ci je tato vlastnost private akebo public?
 
     public FarmaAkoMapa() {
         this.zvierata2 = new HashMap<>();
@@ -28,7 +28,8 @@ public class FarmaAkoMapa {
 
     public void pridajZviera(Zviera zviera) {//metoda ktora prida zviera
         System.out.println(".............Prida zviera do Mapy.................");
-
+        
+        // preco tu pridavas natvrdo nejake zvierata, ved ich budeme pridavat cez starter?
         zvierata2.put("01", new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20, true));
         zvierata2.put("02", new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
         zvierata2.put("03", new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
@@ -40,6 +41,7 @@ public class FarmaAkoMapa {
         Zviera Hus = null;
         zvierata2.put("03", Hus);
     
+        // preco sa v metode na pridanie zvierata snazis robit vypis zvierat? ved na to ma sluzit metoda vypisZvierat(), kt si tu este nevytvorila
         for (Map.Entry<String, Zviera> zviera : zvierata2.entrySet()) {//cyklus pre hashMapu mi nejako nefunguje???
            
             System.out.println(zviera.getKey());//vypis kluca
