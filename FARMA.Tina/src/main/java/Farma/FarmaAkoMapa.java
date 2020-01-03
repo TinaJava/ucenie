@@ -33,9 +33,17 @@ public class FarmaAkoMapa {
 //        for (Map.Entry<String, Zviera> zviera : zvierata.entrySet()) {
 //            if(zvierata.size()==0){
                 System.out.println("pocet zvierat v mape " + zvierata.size());
-            }
-//            System.out.println(zviera.getKey());//vypis kluca
-//            System.out.println(zviera.getValue());//vypis hodnoty 
+                
         }
+    public void pridajZviera(Zviera zviera,String cislo){
+        zvierata.put(cislo, zviera);
+        System.out.println("........bolo pridane nove zviera s cislom........"+ zvierata.put(cislo, zviera));
+        System.out.println("pocet zvierat na farme je" + zvierata.size());
+        
+    }
+}
+
+
+
     
 

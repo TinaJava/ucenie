@@ -147,8 +147,14 @@ public class Starter {
         farma1.vypisZvierat();
 
         // FarmaAkoMapa
-        FarmaAkoMapa farma = new FarmaAkoMapa();
-        farma.vypisZvierat();
+        FarmaAkoMapa farma2 = new FarmaAkoMapa();
+        farma2.vypisZvierat();
+        farma2.pridajZviera(new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true),"1");
+        farma2.pridajZviera(new Krava("Malina", 520.55, 154, true, true, true, true, true,true),"2");
+        farma2.pridajZviera(new Koza(true,true,true,"Meeee", 100.55, 104, true, true),"3");
+        farma2.pridajZviera(new Hus("Hus", 12.55, 34, true, true, true,true),"4");
         
+
+
     }
 }
