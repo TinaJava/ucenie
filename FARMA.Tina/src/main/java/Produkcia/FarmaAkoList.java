@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zvierata;
+package Produkcia;
 
+import Zvierata.Zviera;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,11 +13,11 @@ import java.util.List;
  *
  * @author vlada
  */
-public class Farma {
+public class FarmaAkoList {
 
     private List<Zviera> zvierata;
 
-    public Farma() {  // konstruktor som chcel bez parametrov
+    public FarmaAkoList() {  // konstruktor som chcel bez parametrov
         this.zvierata = new ArrayList<>();// tuto nieco bude zacinajuce na new ...;
     }
 

@@ -5,7 +5,6 @@
  */
 package Produkcia;
 
-import Zvierata.Farma;
 import Zvierata.Hus;
 import Zvierata.Koza;
 import Zvierata.Krava;
@@ -125,7 +124,7 @@ public class Starter {
         //vypis mapy 
         for (Map.Entry<String, Zviera> zviera : zvierataMap.entrySet()) {
             System.out.println(zviera.getKey() + "-" + zviera.getValue());
-           
+
             System.out.println("...............................................");
             int pocetUzitkove = 0;
             for (Zviera vypis : zvierata) {
@@ -133,15 +132,21 @@ public class Starter {
                     pocetUzitkove = pocetUzitkove + 1;
                     System.out.println(vypis);
                 }
-                
+
             }
         }
-        Farma farma1 = new Farma();
+        FarmaAkoList farma1 = new FarmaAkoList();
         farma1.vypisZvierat();
-        farma1.pridajZviera(new Koza (true, true, false, "Koza biela rohata", 180.5, 102, true, true));
-        farma1.pridajZviera(new Krava ("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
-        farma1.pridajZviera(new Hus ("Hus domaca ", 12.5, 32, true, false, true, true));
+        farma1.pridajZviera(new Koza(true, true, false, "Koza biela rohata", 180.5, 102, true, true));
+        farma1.pridajZviera(new Krava("Krava flakata Malina", 550.5, 158, true, true, true, true, true, true));
+        farma1.pridajZviera(new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
         farma1.vypisZvierat();
-        
+
+        FarmaAkoMapa farma2 = new FarmaAkoMapa();
+        farma2.pridajZviera(new Prasa("Parasa spinave z chlieva", 220.55, 104, true, true, true, true, true));
+        farma2.pridajZviera(new Sliepka(true, true, true, "Sliepka Anicka len na vajicka ", 3.5, 20, true));
+        farma2.pridajZviera(new Hus("Hus domaca ", 12.5, 32, true, false, true, true));
+
+        }
     }
-}
+
