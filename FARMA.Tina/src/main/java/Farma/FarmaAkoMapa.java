@@ -27,10 +27,10 @@ public class FarmaAkoMapa {
         if (zvierata.size() == 0) {//toto sa spusti ak je na farme pocet zvierat 0 cize niesu ziadne
             System.out.println("na farme niesu ziadne zvierata");
         } else {//toto sa spusti ak su na farme nejake zvierata a ich pocet je viac ako 0
-            System.out.println(zvierata.keySet() + "-" + zvierata.values());
             
             for (Map.Entry<String, Zviera> zviera : zvierata.entrySet()) {
-            }
+            }            System.out.println(zvierata.keySet() + "-" + zvierata.values());
+
             // tu dopln for pre vypis mapy
         }
     }
