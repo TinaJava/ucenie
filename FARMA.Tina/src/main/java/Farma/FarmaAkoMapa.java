@@ -27,19 +27,17 @@ public class FarmaAkoMapa {
         if (zvierata.size() == 0) {//toto sa spusti ak je na farme pocet zvierat 0 cize niesu ziadne
             System.out.println("na farme niesu ziadne zvierata");
         } else {//toto sa spusti ak su na farme nejake zvierata a ich pocet je viac ako 0
+            System.out.println(zvierata.keySet() + "-" + zvierata.values());
+            
             for (Map.Entry<String, Zviera> zviera : zvierata.entrySet()) {
-            }System.out.println(zviera.getKey + "-" + zviera.getValue());
+            }
             // tu dopln for pre vypis mapy
         }
     }
 
 //         preco sa v metode na pridanie zvierata snazis robit vypis zvierat? ved na to ma sluzit metoda vypisZvierat(), kt si tu este nevytvorila
-
     public void pridajZviera(Zviera zviera, String cislo) {
         zvierata.put(cislo, zviera);
         System.out.println("Bolo pridane nove zviera s cislom: " + cislo + ", aktualny pocet zvierat na farme je: " + zvierata.size());
     }
 }
-
-
-
