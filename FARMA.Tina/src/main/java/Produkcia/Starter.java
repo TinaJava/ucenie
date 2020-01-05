@@ -154,6 +154,7 @@ public class Starter {
         farma2.pridajZviera(new Koza(true, true, true, "Meeee", 100.55, 104, true, true), "3");
         farma2.pridajZviera(new Hus("Hus", 12.55, 34, true, true, true, true), "4");
         farma2.vypisZvierat();
+        
 
     }
 }
