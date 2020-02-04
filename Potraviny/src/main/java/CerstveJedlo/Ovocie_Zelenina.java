@@ -12,7 +12,7 @@ package CerstveJedlo;
 public abstract class Ovocie_Zelenina {
 
     protected String nazov;
-    protected double hmotnost;
+    protected int hmotnost;
     protected int cena;
     private final boolean sladke;
     private final boolean kysele;
@@ -21,7 +21,7 @@ public abstract class Ovocie_Zelenina {
 
     public Ovocie_Zelenina(String nazov, double hmotnost, int cena, boolean sladke, boolean supka, boolean kysele) {
         this.nazov = nazov;
-        this.hmotnost = hmotnost;
+        this.hmotnost = (int) hmotnost;
         this.cena = cena;
         this.sladke = sladke;
         this.kysele = kysele;

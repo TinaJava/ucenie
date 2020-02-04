@@ -18,7 +18,7 @@ public class Uhorka extends Ovocie_Zelenina {
     private boolean jadierka;
     private boolean supka;
 
-    public Uhorka(Farba farba, String nazov, double hmotnost, int cena, boolean sladke, boolean supka, boolean kysele,boolean jadierka) {
+    public Uhorka(Farba farba, String nazov, int hmotnost, int cena, boolean sladke, boolean supka, boolean kysele,boolean jadierka) {
         super(nazov, hmotnost, cena, sladke, supka, kysele);
         this.jadierka = jadierka;
         this.farba = farba;
@@ -56,11 +56,11 @@ public class Uhorka extends Ovocie_Zelenina {
         this.nazov = nazov;
     }
 
-    public double getHmotnost() {
+    public int getHmotnost() {
         return hmotnost;
     }
 
-    public void setHmotnost(double hmotnost) {
+    public void setHmotnost(int hmotnost) {
         this.hmotnost = hmotnost;
     }
 

@@ -15,7 +15,7 @@ import CerstveJedlo.Ovocie_Zelenina;
 public class Jahody extends Ovocie_Zelenina {
     private Farba farba;
 
-    public Jahody(Farba farba, String nazov, double hmotnost, int cena, boolean sladke, boolean supka, boolean kysele) {
+    public Jahody(Farba farba, String nazov, int hmotnost, int cena, boolean sladke, boolean supka, boolean kysele) {
         super(nazov, hmotnost, cena, sladke, supka, kysele);
         this.farba = farba;
     }
@@ -38,11 +38,11 @@ public class Jahody extends Ovocie_Zelenina {
         this.nazov = nazov;
     }
 
-    public double getHmotnost() {
+    public int getHmotnost() {
         return hmotnost;
     }
 
-    public void setHmotnost(double hmotnost) {
+    public void setHmotnost(int hmotnost) {
         this.hmotnost = hmotnost;
     }
 

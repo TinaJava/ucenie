@@ -16,7 +16,7 @@ public class Brokolica extends Ovocie_Zelenina {
 
     private Farba farba;
 
-    public Brokolica(Farba farba, String nazov, double hmotnost, int cena, boolean sladke, boolean supka, boolean kysele) {
+    public Brokolica(Farba farba, String nazov, int hmotnost, int cena, boolean sladke, boolean supka, boolean kysele) {
         super(nazov, hmotnost, cena, sladke, supka, kysele);
         this.farba = farba;
     }
@@ -37,11 +37,11 @@ public class Brokolica extends Ovocie_Zelenina {
         this.nazov = nazov;
     }
 
-    public double getHmotnost() {
+    public int getHmotnost() {
         return hmotnost;
     }
 
-    public void setHmotnost(double hmotnost) {
+    public void setHmotnost(int hmotnost) {
         this.hmotnost = hmotnost;
     }
 
