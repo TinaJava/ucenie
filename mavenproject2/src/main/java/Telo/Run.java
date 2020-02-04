@@ -54,7 +54,7 @@ public class Run {
             System.out.println(udy1);
         }
         System.out.println(".................................................");
-        System.out.println("Vzpis Mapy a  casti tela : ruky a nohy");
+        System.out.println("Vypis Mapy a  casti tela : ruky a nohy");
         Map<String, Koncatiny> castiTela;
         castiTela = new HashMap<>();
         castiTela.put("1", new Noha(5, false, true, 41, "Noha Ciganky", "Hnedej farby", "Vystri nohu"));

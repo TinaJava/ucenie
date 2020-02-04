@@ -27,6 +27,8 @@ public class FarmaAkoMapa {
             System.out.println("na farme niesu ziadne zvierata");
         } else {//toto sa spusti ak su na farme nejake zvierata a ich pocet je viac ako 0
             System.out.println("pocet zvierat je..........." + zvierata.size());
+            zvierata.remove("2");
+            
             for (Map.Entry<String, Zviera> zviera : zvierata.entrySet()) {
                 System.out.println("Cislo zvierata: " + zviera.getKey() + " - " + "Zviera: " + zviera.getValue());
             }
