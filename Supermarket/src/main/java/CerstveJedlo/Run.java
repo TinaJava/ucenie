@@ -91,7 +91,7 @@ public class Run {
         zelenina[3] = new Petrzlen(Farba.BIELA,true,"Petrzlen", 1, 1,false,true,false);
         zelenina[4] = new Uhorka(Farba.ZELENA,"Uhorka salatova", 2, 1,false,true,false,true);
 
-        System.out.println(".....POLE........L E N   Z E L E N I N A ...............");
+        System.out.println(".....POLE  ........L E N   Z E L E N I N A ...............");
 //      vypis len zeleniny
         for (Ovocie_Zelenina zel : zelenina) {
             System.out.println(zel);
