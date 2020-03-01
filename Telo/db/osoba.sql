@@ -33,11 +33,6 @@ vek = 44,
 vaha = 110
 where (meno = 'Michal');
 
-alter table osoba add column kto_je_kto varchar(20);
---prikazom alter mozem zmenit strukturu tabulky. rozsirit ju aj zuzit
---add column = pridaj stlpec
---drop column = vzmaz stlpec
-
 
 update osoba set
 kto_je_kto = 'mama'
@@ -56,3 +51,6 @@ kto_je_kto = 'dcera'
 where (meno = 'Lola');
 
 alter table osoba drop column vaha;
+
+drop user osoba_pouz ;
+

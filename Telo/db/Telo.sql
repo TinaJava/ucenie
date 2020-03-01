@@ -100,3 +100,5 @@ id, meno, mzda
 --zmena mzdy  zamestnanca s id = 1
 update zamestnanec set mzda = 600
 where (id = 1);
+
+drop table ruka;
